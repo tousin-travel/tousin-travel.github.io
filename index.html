@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日本包车服务 - 专业行程定制</title>
-    <meta name="description" content="专业的日本包车服务，提供个性化行程定制，支持中文、日文、英文服务">
+    <title>東森株式会社 - 企業サイト</title>
+    <meta name="description" content="東森株式会社 企業サイト。観光・ビジネス・医療・教育まで、あなたの日本での大切な瞬間を共に。中文/日本語/English 対応。">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,15 +15,16 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-car"></i>
-                    <span data-translate="logo">日本包车服务</span>
+                    <img src="resources/logo.png" alt="TOUSIN" style="height:32px;width:auto;display:block">
+                    <span data-translate="logo">東森株式会社</span>
                 </div>
                 <div class="nav-menu">
                     <a href="#home" data-translate="nav-home">首页</a>
-                    <a href="#services" data-translate="nav-services">服务</a>
-                    <a href="#destinations" data-translate="nav-destinations">目的地</a>
-                    <a href="#about" data-translate="nav-about">关于我们</a>
-                    <a href="#contact" data-translate="nav-contact">联系我们</a>
+                    <a href="#corporate" data-translate="nav-corporate">企业</a>
+                    <a href="#corp-services" data-translate="nav-services-corp">服务介绍</a>
+                    <a href="#corp-strengths" data-translate="nav-strengths">我们的优势</a>
+                    <a href="#stories" data-translate="nav-voices">客户之声</a>
+                    <a href="#corp-contact" data-translate="nav-contact">联系我们</a>
                 </div>
                 <div class="language-selector">
                     <button class="lang-btn active" data-lang="zh">中文</button>
@@ -44,127 +45,159 @@
             <h2 data-translate="hero-subtitle">专业包车服务，定制您的完美旅程</h2>
             <p data-translate="hero-description">我们提供专业的日本包车服务，为您量身定制独特的旅行体验。无论您想探索东京的繁华都市，还是感受京都的古韵风情，我们都能为您提供最优质的服务。</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" data-translate="hero-btn-primary">立即预订</button>
-                <button class="btn btn-secondary" data-translate="hero-btn-secondary">了解更多</button>
+                <a href="#contact" class="btn btn-primary" data-translate="hero-btn-primary">立即预订</a>
+                <a href="#corporate" class="btn btn-secondary" data-translate="hero-btn-secondary">了解更多</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1542640244-a10e6c1dbd44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Japan Travel" loading="lazy">
+            <div class="hero-slider">
+                <img class="slide active" src="resources/旅途风景.jpg" alt="Scenery" loading="lazy">
+                <img class="slide" src="resources/团队包车风景1.jpg" alt="Charter tour" loading="lazy">
+                <img class="slide" src="resources/车辆与司机.jpg" alt="Vehicle and driver" loading="lazy">
+            </div>
+            <div class="hero-overlay-copy">
+                <div class="copy-inner">
+                    <div class="corp-title" data-translate="corp-title">東森株式会社 - 企業サイト</div>
+                    <div class="corp-catch" data-translate="corp-catch">この瞬間、東森とともに。</div>
+                    <div class="corp-sub" data-translate="corp-sub">― あなたの日本での、大切なひとときを共に。</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Removed legacy Services section (replaced by corporate services) -->
+
+    <!-- Corporate Site Sections -->
+    <section id="corporate" class="corporate">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="services-title">我们的服务</h2>
-                <p data-translate="services-subtitle">为您提供全方位的日本旅行解决方案</p>
+                <h2 data-translate="corp-intro-title">私たちがお届けする、特別な「瞬間」 - Our Moments with You</h2>
+                <p data-translate="corp-intro-p1">2022年に誕生した東森株式会社は、日本を訪れるお客様一人ひとりの「特別な瞬間」を作りたいという想いで、さまざまなご要望にお応えしてまいりました。</p>
+            </div>
+            <div class="corporate-intro">
+                <p data-translate="corp-intro-p2">観光に、ビジネスに、学びに――。多くのお客様の「日本での体験」に携わる中で、私たちが最も大切にしているのは、ただの手配ではなく、お客様の心に残る「感動」と「成功」をお手伝いすること。</p>
+                <p data-translate="corp-intro-p3">「この瞬間、東森とともに」</p>
+                <p data-translate="corp-intro-p4">この言葉は、私たちの約束です。空港でお迎えした時の安堵の瞬間。ビジネス契約がまとまった時の喜びの瞬間。日本の美しい風景に息をのんだ感動の瞬間。未来の健康への安心を手に入れた瞬間――。</p>
+                <p data-translate="corp-intro-p5">あなたの旅のすべての瞬間に寄り添い、陰ながら支え、最高の舞台を整える。それが東森株式会社の役目です。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="corp-services" class="corporate services-extended">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="corp-services-title">サービス紹介 - あなたの「瞬間」を彩る、確かなサポート</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3 data-translate="service-1-title">包车服务</h3>
-                    <p data-translate="service-1-desc">舒适豪华的车辆，经验丰富的司机，让您的旅程更加安心舒适。</p>
+                    <div class="service-icon"><i class="fas fa-landmark"></i></div>
+                    <h3 data-translate="corp-serv-1-title">観光・文化体験 ─ 感動の瞬間を共に</h3>
+                    <p data-translate="corp-serv-1-desc">団体観光接待、研修・修学旅行、プライベート包車、空港送迎、伝統文化体験手配</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3 data-translate="service-2-title">行程定制</h3>
-                    <p data-translate="service-2-desc">根据您的兴趣和需求，量身定制专属的日本旅行路线。</p>
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 data-translate="corp-serv-2-title">ビジネス・プロフェッショナル ─ 成功の瞬間を共に</h3>
+                    <p data-translate="corp-serv-2-desc">ビジネス接待・視察アレンジ、商談会・コンベンションサポート、通訳・資料制作サポート</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h3 data-translate="service-3-title">多语言服务</h3>
-                    <p data-translate="service-3-desc">提供中文、日文、英文专业导游服务，消除语言障碍。</p>
+                    <div class="service-icon"><i class="fas fa-hospital"></i></div>
+                    <h3 data-translate="corp-serv-3-title">医療・ウェルネス ─ 安心の瞬間を共に</h3>
+                    <p data-translate="corp-serv-3-desc">健康診断・先進医療機関のご紹介、美容医療接待・治療全程通訳サポート</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3 data-translate="service-4-title">24小时服务</h3>
-                    <p data-translate="service-4-desc">全天候客户服务，随时为您解决旅行中的各种问题。</p>
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 data-translate="corp-serv-4-title">学術・教育 ─ 発見の瞬間を共に</h3>
+                    <p data-translate="corp-serv-4-desc">学術交流団サポート、教育機関視察アレンジ、研究・ビジネス考察</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Destinations Section -->
-    <section id="destinations" class="destinations">
+    <section id="corp-strengths" class="corporate strengths">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="destinations-title">热门目的地</h2>
-                <p data-translate="destinations-subtitle">探索日本最受欢迎的旅游景点</p>
+                <h2 data-translate="corp-strengths-title">東森の強み - あなたの「瞬間」を支える、確かな理由</h2>
             </div>
-            <div class="destinations-grid">
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tokyo" loading="lazy">
-                    <div class="destination-content">
-                        <h3 data-translate="dest-1-title">东京</h3>
-                        <p data-translate="dest-1-desc">现代与传统完美融合的都市，体验日本的前沿科技和传统文化。</p>
-                    </div>
+            <div class="strengths-list">
+                <div class="strength">
+                    <h3 data-translate="corp-strength-1-title">1. 豊富な実績と柔軟な対応力</h3>
+                    <p data-translate="corp-strength-1-desc">大小さまざまな旅行団、ビジネス視察団、学術交流団のご接待実績があります。多様なご要望に合わせて、最適なプランを柔軟にご提案いたします。</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kyoto" loading="lazy">
-                    <div class="destination-content">
-                        <h3 data-translate="dest-2-title">京都</h3>
-                        <p data-translate="dest-2-desc">千年古都，感受日本传统文化的精髓和禅意之美。</p>
-                    </div>
+                <div class="strength">
+                    <h3 data-translate="corp-strength-2-title">2. 確かなネットワークと専属担当制</h3>
+                    <p data-translate="corp-strength-2-desc">観光、ビジネス、医療、教育など、各分野にわたる強力なパートナーネットワークが強みです。ご依頼内容に応じた専門知識を持つ担当者が、最初から最後まで責任をもってご対応します。</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Osaka" loading="lazy">
-                    <div class="destination-content">
-                        <h3 data-translate="dest-3-title">大阪</h3>
-                        <p data-translate="dest-3-desc">美食之都，品尝最地道的日本料理和体验关西文化。</p>
-                    </div>
-                </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1542640244-a10e6c1dbd44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hokkaido" loading="lazy">
-                    <div class="destination-content">
-                        <h3 data-translate="dest-4-title">北海道</h3>
-                        <p data-translate="dest-4-desc">自然风光秀丽，四季景色各异，是放松身心的理想之地。</p>
-                    </div>
+                <div class="strength">
+                    <h3 data-translate="corp-strength-3-title">3. 細やかな「おもてなし」の心</h3>
+                    <p data-translate="corp-strength-3-desc">「この瞬間、東森とともに」の精神で、言語の壁を越えた心の通うサービスを提供します。お客様の立場に立った、きめ細やかな気配りを心がけています。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Stories (Media + Voices) Section -->
+    <section id="stories" class="corporate stories">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 data-translate="about-title">关于我们</h2>
-                    <p data-translate="about-desc">我们是一家专业的日本包车服务公司，拥有多年的行业经验和专业的服务团队。我们致力于为每一位客户提供最优质的旅行体验，让您的日本之旅成为难忘的回忆。</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="about-feature-1">专业认证司机</span>
+            <div class="section-header">
+                <h2 data-translate="corp-stories-title">モーメント & ボイス</h2>
+                <p data-translate="corp-stories-sub">東森株式会社の映像・写真とお客様の声</p>
+            </div>
+            <div class="carousel" aria-label="stories carousel">
+                <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <video controls preload="metadata" playsinline>
+                                <source src="resources/旅行视频合集.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="about-feature-2">豪华舒适车辆</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="about-feature-3">24小时客户服务</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="about-feature-4">个性化定制服务</span>
-                        </div>
+                        <div class="carousel-item"><img src="resources/公司内景.jpg" alt="Office interior" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/东森会社成员合照.jpg" alt="Team photo" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/车辆合照.png" alt="Fleet" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/团队包车风景2.jpg" alt="Tour scenery 2" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/团队包车风景3.jpg" alt="Tour scenery 3" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/旅途风景2.jpg" alt="Scenery 2" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/旅途风景3.jpg" alt="Scenery 3" loading="lazy"></div>
+                        <div class="carousel-item"><img src="resources/旅途风景4.jpg" alt="Scenery 4" loading="lazy"></div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1542640244-a10e6c1dbd44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About Us" loading="lazy">
+                <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+            </div>
+
+            <div class="section-header" style="margin-top: var(--spacing-2xl);">
+                <h2 data-translate="corp-stories-voices-title">お客様の声</h2>
+            </div>
+            <div class="voices-list">
+                <div class="voice">
+                    <p data-translate="corp-voice-1">A社 ビジネス視察団ご担当者様: 初めての日本での商談でしたが、東森様の手配された通訳とスケジュール管理が抜群で、契約締結という成功の『瞬間』を掴むことができました。まさに『この瞬間、東森とともに』を体感しました。</p>
+                </div>
+                <div class="voice">
+                    <p data-translate="corp-voice-2">B大学 研修旅行参加学生様: 日本の技術を学ぶだけでなく、茶道体験など文化に触れられたことが忘れられない『瞬間』でした。東森のスタッフの皆さんの温かいサポートが、すべてをより特別なものにしてくれました。</p>
+                </div>
+                <div class="voice">
+                    <p data-translate="corp-voice-3">C様 ご夫婦での医療ツアー: 言葉の不安もなく、とてもリラックスして高度な健康診断を受けられました。結果を聞いて『安心』したあの瞬間を、東森さんと共有できたことに感謝しています。</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="corp-contact" class="corporate corp-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="corp-contact-title">お問い合わせ - あなたの特別な「瞬間」のはじまりに</h2>
+                <p data-translate="corp-contact-desc">あなたの日本での計画が、かけがえのない「瞬間」となりますように。まずは、お気軽にご相談ください。</p>
+            </div>
+            <div class="corp-contact-grid">
+                <div class="corp-contact-cta">
+                    <a href="#contact" class="btn btn-primary" data-translate="corp-contact-cta">あなたの「瞬間」への第一歩を、ここから</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Removed legacy Destinations section -->
+
+    <!-- Removed legacy About section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -179,7 +212,7 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4 data-translate="contact-phone-title">电话</h4>
-                            <p>+81-3-1234-5678</p>
+                            <p>070-2233-0998</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -193,27 +226,11 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4 data-translate="contact-address-title">地址</h4>
-                            <p data-translate="contact-address">东京都港区六本木1-1-1</p>
+                            <p data-translate="contact-address">東京都墨田区立花四丁目23番7号椎葉302号室</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="姓名" data-translate-placeholder="form-name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="邮箱" data-translate-placeholder="form-email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="电话" data-translate-placeholder="form-phone" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="留言" data-translate-placeholder="form-message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-translate="form-submit">发送消息</button>
-                    </form>
-                </div>
+                <!-- contact form removed per request -->
             </div>
         </div>
     </section>
@@ -224,27 +241,20 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <i class="fas fa-car"></i>
-                        <span data-translate="logo">日本包车服务</span>
+                        <img src="resources/logo.png" alt="TOUSIN" style="height:28px;width:auto;display:block">
+                        <span data-translate="logo">東森株式会社</span>
                     </div>
                     <p data-translate="footer-desc">专业的日本包车服务，为您提供最优质的旅行体验。</p>
                 </div>
                 <div class="footer-section">
-                    <h4 data-translate="footer-services-title">服务</h4>
+                    <h4>导航</h4>
                     <ul>
-                        <li><a href="#" data-translate="footer-service-1">包车服务</a></li>
-                        <li><a href="#" data-translate="footer-service-2">行程定制</a></li>
-                        <li><a href="#" data-translate="footer-service-3">多语言服务</a></li>
-                        <li><a href="#" data-translate="footer-service-4">24小时服务</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 data-translate="footer-destinations-title">目的地</h4>
-                    <ul>
-                        <li><a href="#" data-translate="footer-dest-1">东京</a></li>
-                        <li><a href="#" data-translate="footer-dest-2">京都</a></li>
-                        <li><a href="#" data-translate="footer-dest-3">大阪</a></li>
-                        <li><a href="#" data-translate="footer-dest-4">北海道</a></li>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#corporate">企業サイト</a></li>
+                        <li><a href="#corp-services">服务介绍</a></li>
+                        <li><a href="#corp-strengths">我们的优势</a></li>
+                        <li><a href="#stories">客户之声</a></li>
+                        <li><a href="#corp-contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -254,7 +264,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 日本包车服务. <span data-translate="footer-rights">保留所有权利</span></p>
+                <p>&copy; 2024 東森株式会社. <span data-translate="footer-rights">保留所有权利</span></p>
             </div>
         </div>
     </footer>
