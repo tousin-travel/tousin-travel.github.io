@@ -380,7 +380,7 @@ const translations = {
         // Corporate Contact
         'corp-contact-title': 'Contact Us — Where Your Special Moments Begin',
         'corp-contact-desc': 'May your plans in Japan become irreplaceable “moments”. Please feel free to consult us.',
-        'corp-contact-info': 'TOUSIN 〒XXX-XXXX, Sumida-ku, Tokyo TEL: 070-2233-0998 Email: info@[your-domain].jp',
+        'corp-contact-info': 'TOUSIN 〒XXX-XXXX, Sumida-ku, Tokyo TEL: 03-53 56-7810 Email: info@[your-domain].jp',
         'corp-contact-cta': 'Take the first step toward your “moment”',
         'corp-stories-title': 'Moments & Voices',
         'corp-stories-sub': 'TOUSIN videos, photos and client testimonials',
