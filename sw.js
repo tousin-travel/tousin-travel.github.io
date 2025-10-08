@@ -1,5 +1,5 @@
 // Service Worker for Cache Control
-const CACHE_NAME = 'tousin-v20241201';
+const CACHE_NAME = 'tousin-v20251008';
 const urlsToCache = [
     '/',
     '/styles.css',

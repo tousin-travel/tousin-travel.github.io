@@ -47,15 +47,18 @@
     <meta name="apple-mobile-web-app-title" content="東森株式会社">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="stylesheet" href="styles.css?v=20241201">
+    <link rel="stylesheet" href="styles.css?v=20251008">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Fallback Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"></noscript>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=20241201">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=20241201">
-    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=20241201">
-    <link rel="shortcut icon" href="resources/logo.png?v=20241201">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=20251008">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=20251008">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=20251008">
+    <link rel="shortcut icon" href="resources/logo.png?v=20251008">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -153,6 +156,7 @@
                 </div>
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
+                    <span class="hamburger-fallback">☰</span>
                 </div>
             </div>
         </nav>
@@ -210,22 +214,34 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-landmark"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                        <span class="icon-fallback">🏛️</span>
+                    </div>
                     <h3 data-translate="corp-serv-1-title">観光・文化体験 ─ 感動の瞬間を共に</h3>
                     <p data-translate="corp-serv-1-desc">団体観光接待、研修・修学旅行、プライベート包車、空港送迎、伝統文化体験手配</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="icon-fallback">💼</span>
+                    </div>
                     <h3 data-translate="corp-serv-2-title">ビジネス・プロフェッショナル ─ 成功の瞬間を共に</h3>
                     <p data-translate="corp-serv-2-desc">ビジネス接待・視察アレンジ、商談会・コンベンションサポート、通訳・資料制作サポート</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-hospital"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-hospital"></i>
+                        <span class="icon-fallback">🏥</span>
+                    </div>
                     <h3 data-translate="corp-serv-3-title">医療・ウェルネス ─ 安心の瞬間を共に</h3>
                     <p data-translate="corp-serv-3-desc">健康診断・先進医療機関のご紹介、美容医療接待・治療全程通訳サポート</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="icon-fallback">🎓</span>
+                    </div>
                     <h3 data-translate="corp-serv-4-title">学術・教育 ─ 発見の瞬間を共に</h3>
                     <p data-translate="corp-serv-4-desc">学術交流団サポート、教育機関視察アレンジ、研究・ビジネス考察</p>
                 </div>
@@ -388,13 +404,13 @@
         </div>
     </footer>
 
-    <script src="script_abc2/script.js?v=20241201"></script>
+    <script src="script_abc2/script.js?v=20251008"></script>
     
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js?v=20241201')
+                navigator.serviceWorker.register('/sw.js?v=20251008')
                     .then(registration => {
                         console.log('SW registered: ', registration);
                     })

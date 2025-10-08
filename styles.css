@@ -169,6 +169,22 @@ body[data-lang="en"] {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-primary);
+    position: relative;
+}
+
+.mobile-menu-toggle .hamburger-fallback {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Show fallback when Font Awesome fails to load */
+.mobile-menu-toggle:not(.fa-loaded) .fas {
+    display: none;
+}
+
+.mobile-menu-toggle:not(.fa-loaded) .hamburger-fallback {
+    display: inline-block;
 }
 
 /* Hero Section */
@@ -501,11 +517,27 @@ section {
     align-items: center;
     justify-content: center;
     margin: 0 auto var(--spacing-md);
+    position: relative;
 }
 
 .service-icon i {
     font-size: 2rem;
     color: var(--bg-primary);
+}
+
+.service-icon .icon-fallback {
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+}
+
+/* Show fallback when Font Awesome fails to load */
+.service-icon:not(.fa-loaded) .fas {
+    display: none;
+}
+
+.service-icon:not(.fa-loaded) .icon-fallback {
+    display: block;
 }
 
 .service-card h3 {

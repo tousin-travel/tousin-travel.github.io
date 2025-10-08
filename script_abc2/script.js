@@ -620,6 +620,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize language switcher
     new LanguageSwitcher();
     
+    // Check Font Awesome loading
+    checkFontAwesome();
+    
     // Add loading animation
     document.body.classList.add('loaded');
     
@@ -801,7 +804,45 @@ function initStoriesCarousel() {
     startAuto();
 }
 
+// Font Awesome loading detection
+function checkFontAwesome() {
+    // Check if Font Awesome is loaded by testing a Font Awesome icon
+    const testIcon = document.createElement('i');
+    testIcon.className = 'fas fa-check';
+    testIcon.style.position = 'absolute';
+    testIcon.style.left = '-9999px';
+    testIcon.style.visibility = 'hidden';
+    document.body.appendChild(testIcon);
+    
+    // Get computed style to check if Font Awesome font is loaded
+    const computedStyle = window.getComputedStyle(testIcon);
+    const fontFamily = computedStyle.getPropertyValue('font-family');
+    
+    // Check if Font Awesome font is loaded
+    const isFontAwesomeLoaded = fontFamily.includes('Font Awesome') || 
+                               fontFamily.includes('FontAwesome') ||
+                               computedStyle.getPropertyValue('font-weight') === '900';
+    
+    // Clean up test element
+    document.body.removeChild(testIcon);
+    
+    // Add class to indicate Font Awesome status
+    if (isFontAwesomeLoaded) {
+        document.querySelectorAll('.mobile-menu-toggle, .service-icon').forEach(el => {
+            el.classList.add('fa-loaded');
+        });
+    } else {
+        // Font Awesome not loaded, show fallback icons
+        document.querySelectorAll('.mobile-menu-toggle, .service-icon').forEach(el => {
+            el.classList.remove('fa-loaded');
+        });
+        
+        // Log warning for debugging
+        console.warn('Font Awesome not loaded, using fallback icons');
+    }
+}
+
 // Export for potential module usage
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { LanguageSwitcher, utils };
+    module.exports = { LanguageSwitcher, utils, checkFontAwesome };
 }
