@@ -458,7 +458,10 @@ section {
     background: var(--bg-primary);
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 16/9;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stories .carousel-item img,
@@ -466,7 +469,35 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     display: block;
+}
+
+/* 针对横向图片的优化 */
+.stories .carousel-item img[data-orientation="landscape"],
+.stories .carousel-item video[data-orientation="landscape"] {
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 针对纵向图片的优化 */
+.stories .carousel-item img[data-orientation="portrait"],
+.stories .carousel-item video[data-orientation="portrait"] {
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 针对正方形图片的优化 */
+.stories .carousel-item img[data-orientation="square"],
+.stories .carousel-item video[data-orientation="square"] {
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
 }
 
 .stories .carousel-btn {
@@ -937,7 +968,20 @@ section {
     .stories .carousel-item video { 
         height: 320px; 
         object-fit: cover;
-        object-position: center;
+        object-position: center center;
+    }
+
+    /* 移动端所有方向图片优化 */
+    .stories .carousel-item img[data-orientation="landscape"],
+    .stories .carousel-item video[data-orientation="landscape"],
+    .stories .carousel-item img[data-orientation="portrait"],
+    .stories .carousel-item video[data-orientation="portrait"],
+    .stories .carousel-item img[data-orientation="square"],
+    .stories .carousel-item video[data-orientation="square"] {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
     }
 }
 
@@ -1006,7 +1050,20 @@ section {
     .stories .carousel-item video { 
         height: 280px; 
         object-fit: cover;
-        object-position: center;
+        object-position: center center;
+    }
+
+    /* 小屏幕所有方向图片优化 */
+    .stories .carousel-item img[data-orientation="landscape"],
+    .stories .carousel-item video[data-orientation="landscape"],
+    .stories .carousel-item img[data-orientation="portrait"],
+    .stories .carousel-item video[data-orientation="portrait"],
+    .stories .carousel-item img[data-orientation="square"],
+    .stories .carousel-item video[data-orientation="square"] {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
     }
 }
 

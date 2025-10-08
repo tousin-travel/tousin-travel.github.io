@@ -2,9 +2,23 @@
 const fs = require('fs');
 const path = require('path');
 
-// Generate version based on current timestamp
-const version = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-// const version = '202510081';
+// Generate version based on current timestamp with time precision
+const now = new Date();
+const dateStr = now.toISOString().slice(0, 10).replace(/-/g, '');
+const timeStr = now.toTimeString().slice(0, 8).replace(/:/g, '');
+const timestamp = now.getTime().toString();
+
+// Version options (choose one):
+// Option 1: Date + Time (YYYYMMDDHHMMSS) - 14 digits
+const version = `${dateStr}${timeStr}`;
+
+// Option 2: Full timestamp (milliseconds) - 13 digits
+// const version = timestamp;
+
+// Option 3: Unix timestamp (seconds) - 10 digits  
+// const version = Math.floor(now.getTime() / 1000).toString();
+
+console.log(`Generated version: ${version} (format: YYYYMMDDHHMMSS)`);
 
 // Files to update
 const filesToUpdate = [
@@ -13,6 +27,9 @@ const filesToUpdate = [
 
 // Version patterns to replace
 const versionPatterns = [
+    { pattern: /v=\d{14}/g, replacement: `v=${version}` },
+    { pattern: /tousin-v\d{14}/g, replacement: `tousin-v${version}` },
+    // Also handle old 8-digit format for backward compatibility
     { pattern: /v=\d{8}/g, replacement: `v=${version}` },
     { pattern: /tousin-v\d{8}/g, replacement: `tousin-v${version}` }
 ];
@@ -37,6 +54,8 @@ filesToUpdate.forEach(filePath => {
 const swPath = 'sw.js';
 if (fs.existsSync(swPath)) {
     let swContent = fs.readFileSync(swPath, 'utf8');
+    // Handle both new 14-digit format and old 8-digit format
+    swContent = swContent.replace(/tousin-v\d{14}/g, `tousin-v${version}`);
     swContent = swContent.replace(/tousin-v\d{8}/g, `tousin-v${version}`);
     fs.writeFileSync(swPath, swContent, 'utf8');
     console.log(`Updated Service Worker version to ${version}`);

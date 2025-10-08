@@ -680,6 +680,32 @@ function initStoriesCarousel() {
     const nextBtn = document.querySelector('.stories .carousel .next');
     if (!viewport || !track) return;
 
+    // 自动检测图片方向并设置属性
+    const detectImageOrientation = () => {
+        const images = track.querySelectorAll('img, video');
+        images.forEach(media => {
+            if (media.complete || media.readyState >= 2) {
+                setOrientation(media);
+            } else {
+                media.addEventListener('load', () => setOrientation(media));
+            }
+        });
+    };
+
+    const setOrientation = (media) => {
+        const aspectRatio = media.naturalWidth / media.naturalHeight;
+        if (aspectRatio > 1.2) {
+            media.setAttribute('data-orientation', 'landscape');
+        } else if (aspectRatio < 0.8) {
+            media.setAttribute('data-orientation', 'portrait');
+        } else {
+            media.setAttribute('data-orientation', 'square');
+        }
+    };
+
+    // 初始化时检测方向
+    detectImageOrientation();
+
     let items = Array.from(track.children);
     let index = 0;
     let autoTimer;
