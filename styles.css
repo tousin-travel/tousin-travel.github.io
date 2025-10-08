@@ -193,10 +193,21 @@ body[data-lang="en"] {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: calc(var(--spacing-2xl) + 100px) var(--spacing-sm) var(--spacing-2xl);
+    padding: calc(var(--spacing-2xl) + 100px) 0 var(--spacing-2xl);
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
     position: relative;
     overflow: hidden;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+    gap: var(--spacing-xl);
 }
 
 .hero::before {
@@ -215,7 +226,6 @@ body[data-lang="en"] {
     max-width: 600px;
     z-index: 1;
     position: relative;
-    margin-right: var(--spacing-lg);
 }
 
 .hero h1 {
@@ -250,7 +260,6 @@ body[data-lang="en"] {
     flex: 1;
     max-width: 500px;
     position: relative;
-    margin-left: var(--spacing-lg);
 }
 
 /* Hero slider */
@@ -269,6 +278,7 @@ body[data-lang="en"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0;
     transform: scale(1.05);
     transition: opacity var(--transition-slow), transform var(--transition-slow);
@@ -419,11 +429,14 @@ section {
 /* Stories carousel */
 .stories .carousel {
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .stories .carousel-viewport {
     overflow: hidden;
     width: 100%;
+    max-width: 100%;
 }
 
 .stories .carousel-track {
@@ -432,6 +445,7 @@ section {
     transition: transform var(--transition-normal);
     will-change: transform;
     width: max-content;
+    max-width: 100%;
 }
 
 .stories .carousel-item {
@@ -442,6 +456,8 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     background: var(--bg-primary);
+    width: 100%;
+    max-width: 100%;
 }
 
 .stories .carousel-item img,
@@ -475,6 +491,13 @@ section {
     gap: var(--spacing-2xl);
     align-items: center;
     justify-content: center;
+}
+
+.corp-contact-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .corp-contact-info p {
@@ -781,7 +804,12 @@ section {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: calc(var(--spacing-xl) + 100px) var(--spacing-sm) var(--spacing-xl);
+        padding: calc(var(--spacing-xl) + 100px) 0 var(--spacing-xl);
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        gap: var(--spacing-lg);
     }
     
     .hero h1 {
@@ -790,7 +818,6 @@ section {
     
     .hero-image {
         max-width: 640px;
-        margin-top: var(--spacing-xl);
         width: 100%;
     }
     
@@ -805,6 +832,14 @@ section {
 
     .corp-contact-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .corp-contact-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -815,6 +850,31 @@ section {
     
     .mobile-menu-toggle {
         display: block;
+    }
+    
+    /* Fix carousel overflow on mobile */
+    .stories .carousel {
+        margin: 0 -var(--spacing-sm);
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .stories .carousel-viewport {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .stories .carousel-viewport::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .corp-contact-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     
     .hero h1 {
@@ -854,14 +914,22 @@ section {
     .hero-slider {
         height: 360px;
     }
+    
+    .hero-slider .slide {
+        object-fit: cover;
+        object-position: center center;
+    }
 
     .stories .carousel-item { 
-        min-width: 90%; 
-        max-width: 90%;
+        min-width: 85vw; 
+        max-width: 85vw;
+        width: 85vw;
     }
     .stories .carousel-item img,
     .stories .carousel-item video { 
         height: 320px; 
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -871,7 +939,11 @@ section {
     }
     
     .hero {
-        padding: calc(var(--spacing-lg) + 140px) var(--spacing-xs) var(--spacing-lg);
+        padding: calc(var(--spacing-lg) + 140px) 0 var(--spacing-lg);
+    }
+    
+    .hero .container {
+        padding: 0 var(--spacing-xs);
     }
     
     .hero h1 {
@@ -900,18 +972,33 @@ section {
     .corp-catch {
         font-size: 1.25rem;
     }
+    
+    .corp-contact-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
     .hero-slider {
         height: 300px;
     }
+    
+    .hero-slider .slide {
+        object-fit: cover;
+        object-position: center center;
+    }
 
     .stories .carousel-item { 
-        min-width: 95%; 
-        max-width: 95%;
+        min-width: 90vw; 
+        max-width: 90vw;
+        width: 90vw;
     }
     .stories .carousel-item img,
     .stories .carousel-item video { 
         height: 280px; 
+        object-fit: cover;
+        object-position: center;
     }
 }
 

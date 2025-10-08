@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Generate version based on current timestamp
-const version = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+// const version = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+const version = '202510081';
 
 // Files to update
 const filesToUpdate = [
