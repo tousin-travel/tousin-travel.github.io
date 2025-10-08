@@ -419,7 +419,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js?v=202510081338411338411')
+                navigator.serviceWorker.register('./sw.js?v=202510081338411338411')
                     .then(registration => {
                         console.log('SW registered: ', registration);
                     })
