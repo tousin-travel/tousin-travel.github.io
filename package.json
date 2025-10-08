@@ -1,0 +1,25 @@
+{
+  "name": "tousin-website",
+  "version": "1.0.0",
+  "description": "東森株式会社企业网站",
+  "main": "index.html",
+  "scripts": {
+    "update-version": "node update-version.js",
+    "deploy": "npm run update-version && echo 'Version updated, ready for deployment'",
+    "clear-cache": "echo 'Cache clearing instructions: 1. Hard refresh (Ctrl+F5) 2. Clear browser cache 3. Use incognito mode'"
+  },
+  "keywords": [
+    "tousin",
+    "japan",
+    "tourism",
+    "business",
+    "medical",
+    "education"
+  ],
+  "author": "東森株式会社",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
