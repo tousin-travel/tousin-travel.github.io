@@ -96,7 +96,7 @@ const translations = {
         // Corporate Services
         'corp-services-title': '服务介绍 - 为您的“瞬间”提供可靠支持',
         'corp-serv-1-title': '观光·文化体验 —— 共同见证感动瞬间',
-        'corp-serv-1-desc': '团体观光接待、研修·修学旅行、私人包车、机场接送、传统文化体验安排',
+        'corp-serv-1-desc': '团体观光旅游接待、研修·修学旅行、私人包车、机场接送、传统文化体验安排',
         'corp-serv-2-title': '商务·专业支持 —— 共同成就成功瞬间',
         'corp-serv-2-desc': '商务接待与考察安排、商谈会·会展支持、口译与资料制作支持',
         'corp-serv-3-title': '医疗·健康 —— 共同守护安心瞬间',
@@ -681,7 +681,11 @@ function initStoriesCarousel() {
     let index = 0;
     let autoTimer;
 
-    const getItemWidth = () => items[0]?.getBoundingClientRect().width || 0;
+    const getItemWidth = () => {
+        if (!items[0]) return 0;
+        const rect = items[0].getBoundingClientRect();
+        return rect.width;
+    };
     const gap = parseFloat(getComputedStyle(track).gap || '0');
 
     const moveTo = (i) => {
@@ -741,6 +745,56 @@ function initStoriesCarousel() {
     // Pause on hover
     viewport.addEventListener('mouseenter', stopAuto);
     viewport.addEventListener('mouseleave', startAuto);
+
+    // Handle window resize
+    const handleResize = utils.debounce(() => {
+        // Recalculate and reset position
+        moveTo(0);
+    }, 250);
+    
+    window.addEventListener('resize', handleResize);
+
+    // Touch support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let isDragging = false;
+
+    const handleTouchStart = (e) => {
+        touchStartX = e.touches[0].clientX;
+        isDragging = true;
+        stopAuto();
+    };
+
+    const handleTouchMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+    };
+
+    const handleTouchEnd = (e) => {
+        if (!isDragging) return;
+        touchEndX = e.changedTouches[0].clientX;
+        isDragging = false;
+        
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - next
+                onNext();
+            } else {
+                // Swipe right - previous
+                onPrev();
+            }
+        }
+        
+        startAuto();
+    };
+
+    // Add touch event listeners
+    viewport.addEventListener('touchstart', handleTouchStart, { passive: false });
+    viewport.addEventListener('touchmove', handleTouchMove, { passive: false });
+    viewport.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     // Init
     moveTo(0);

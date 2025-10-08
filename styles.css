@@ -7,8 +7,8 @@
 
 :root {
     /* Colors */
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary-color: rgb(4, 56, 150);
+    --primary-dark: rgb(3, 40, 120);
     --secondary-color: #f59e0b;
     --accent-color: #ef4444;
     --text-primary: #1f2937;
@@ -175,6 +175,7 @@ body[data-lang="en"] {
 .hero {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     padding: var(--spacing-2xl) var(--spacing-sm);
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
@@ -198,6 +199,7 @@ body[data-lang="en"] {
     max-width: 600px;
     z-index: 1;
     position: relative;
+    margin-right: var(--spacing-lg);
 }
 
 .hero h1 {
@@ -232,6 +234,7 @@ body[data-lang="en"] {
     flex: 1;
     max-width: 500px;
     position: relative;
+    margin-left: var(--spacing-lg);
 }
 
 /* Hero slider */
@@ -404,6 +407,7 @@ section {
 
 .stories .carousel-viewport {
     overflow: hidden;
+    width: 100%;
 }
 
 .stories .carousel-track {
@@ -411,6 +415,7 @@ section {
     gap: var(--spacing-md);
     transition: transform var(--transition-normal);
     will-change: transform;
+    width: max-content;
 }
 
 .stories .carousel-item {
@@ -818,9 +823,14 @@ section {
         height: 360px;
     }
 
-    .stories .carousel-item { min-width: 90%; }
+    .stories .carousel-item { 
+        min-width: 90%; 
+        max-width: 90%;
+    }
     .stories .carousel-item img,
-    .stories .carousel-item video { height: 320px; }
+    .stories .carousel-item video { 
+        height: 320px; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -853,6 +863,19 @@ section {
 
     .corp-catch {
         font-size: 1.25rem;
+    }
+
+    .hero-slider {
+        height: 300px;
+    }
+
+    .stories .carousel-item { 
+        min-width: 95%; 
+        max-width: 95%;
+    }
+    .stories .carousel-item img,
+    .stories .carousel-item video { 
+        height: 280px; 
     }
 }
 
