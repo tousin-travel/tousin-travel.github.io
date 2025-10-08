@@ -10,9 +10,9 @@ const translations = {
         'nav-contact': '联系我们',
         
         // Hero Section
-        'hero-title': '探索日本之美',
-        'hero-subtitle': '专业包车服务，定制您的完美旅程',
-        'hero-description': '我们提供专业的日本包车服务，为您量身定制独特的旅行体验。无论您想探索东京的繁华都市，还是感受京都的古韵风情，我们都能为您提供最优质的服务。',
+        'hero-title': '探索日本，沉浸每一寸感动',
+        'hero-subtitle': '拒绝赶场式的奔波，您的专属旅程，理应由心定义。我们提供专业的旅游包车服务，以匠心精神为您定制独一无二的旅行篇章。',
+        'hero-description': '无论是穿梭于东京的霓虹繁华，还是流连于京都的唐风古韵，您的专属座驾与本地司导，不仅是安全的保障，更是您探索未知的贴心旅伴。让我们聆听您的想法，为您量身打造一段关于日本的、充满温情的记忆。',
         'hero-btn-primary': '立即预订',
         'hero-btn-secondary': '了解更多',
         
@@ -139,9 +139,9 @@ const translations = {
         'nav-contact': 'お問い合わせ',
         
         // Hero Section
-        'hero-title': '日本の美を探索',
-        'hero-subtitle': 'プロのチャウファーサービスで、完璧な旅をカスタマイズ',
-        'hero-description': '私たちはプロの日本チャウファーサービスを提供し、お客様に合わせたユニークな旅行体験をカスタマイズします。東京の賑やかな都市を探索したい方も、京都の古い魅力を感じたい方も、最高のサービスを提供いたします。',
+        'hero-title': '日本を探索し、ひとときの感動に浸る',
+        'hero-subtitle': '駆け足の観光はもう終わりにしませんか。お客様だけの特別な旅は、心のままに定義されるべきです。私たちは専門的な貸切チャーターサービスを提供し、職人の精神で唯一無二の旅の一章を綴ります。',
+        'hero-description': '東京の霓虹灯が織りなす繁華街を穿梭するもよし、京都に息づく唐代の風情のあるたたずまいに流連するもよし、専用の車両と地元の知識豊富な運転手は、単なる安全の保障ではなく、未知を探索するための心安らぐ道先案内人です。どうぞお気軽にご要望をお聞かせください。お客様のための、温もりあふれる日本での思い出を、心を込めてお作りします。',
         'hero-btn-primary': '今すぐ予約',
         'hero-btn-secondary': '詳細を見る',
         
@@ -268,9 +268,9 @@ const translations = {
         'nav-contact': 'Contact',
         
         // Hero Section
-        'hero-title': 'Discover the Beauty of Japan',
-        'hero-subtitle': 'Professional Chauffeur Service, Customize Your Perfect Journey',
-        'hero-description': 'We provide professional Japan chauffeur services, tailoring unique travel experiences for you. Whether you want to explore Tokyo\'s bustling metropolis or experience Kyoto\'s ancient charm, we can provide you with the highest quality service.',
+        'hero-title': 'Explore Japan, Immerse Yourself in Every Moment.',
+        'hero-subtitle': 'Move beyond rushed itineraries. Your exclusive journey should be defined by your own passions. We offer professional private car charter services, crafting your unique travel story with an artisan\'s dedication.',
+        'hero-description': 'Whether navigating the neon-lit buzz of Tokyo or wandering through the timeless elegance of Kyoto\'s ancient streets, your private vehicle and knowledgeable local driver are more than just a guarantee of safety—they are your trusted companion for discovery. Share your vision with us, and let us tailor a warm and unforgettable memory of Japan, just for you.',
         'hero-btn-primary': 'Book Now',
         'hero-btn-secondary': 'Learn More',
         
