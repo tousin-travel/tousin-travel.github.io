@@ -18,7 +18,7 @@
     <meta name="keywords" content="東森株式会社,日本包车服务,日本旅游,商务接待,医疗旅游,教育交流,多语言服务,日本导游,TOUSIN,日本企业服务">
     <meta name="author" content="東森株式会社">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="zh-CN,ja,en">
+    <meta name="language" content="zh-CN,zh-TW,ja,en">
     <meta name="geo.region" content="JP-13">
     <meta name="geo.placename" content="东京">
     <meta name="geo.position" content="35.6762;139.6503">
@@ -50,7 +50,7 @@
     <meta name="apple-mobile-web-app-title" content="東森株式会社">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="stylesheet" href="styles.css?v=202510082009222009221338411">
+    <link rel="stylesheet" href="styles.css?v=202510112007002007002009221338411">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome with preload -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,10 +62,10 @@
     <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous"></noscript>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=202510082009222009221338411">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=202510082009222009221338411">
-    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=202510082009222009221338411">
-    <link rel="shortcut icon" href="resources/logo.png?v=202510082009222009221338411">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=202510112007002007002009221338411">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=202510112007002007002009221338411">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=202510112007002007002009221338411">
+    <link rel="shortcut icon" href="resources/logo.png?v=202510112007002007002009221338411">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -138,6 +138,15 @@
         ]
     }
     </script>
+    
+    <!-- Immediate language setting to prevent FOUC -->
+    <script>
+        // Set language immediately to prevent FOUC
+        (function() {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
+            document.body.setAttribute('data-lang', savedLang);
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -157,8 +166,9 @@
                     <a href="#corp-contact" data-translate="nav-contact">联系我们</a>
                 </div>
                 <div class="language-selector">
-                    <button class="lang-btn active" data-lang="zh">中文</button>
-                    <button class="lang-btn" data-lang="ja">日本語</button>
+                    <button class="lang-btn active" data-lang="ja">日本語</button>
+                    <button class="lang-btn" data-lang="zh-CN">简体中文</button>
+                    <button class="lang-btn" data-lang="zh-TW">繁体中文</button>
                     <button class="lang-btn" data-lang="en">English</button>
                 </div>
                 <div class="mobile-menu-toggle">
@@ -413,13 +423,13 @@
         </div>
     </footer>
 
-    <script src="script_abc2/script.js?v=202510082009222009221338411"></script>
+    <script src="script_abc2/script.js?v=202510112007002007002009221338411"></script>
     
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js?v=202510082009222009221338411')
+                navigator.serviceWorker.register('./sw.js?v=202510112007002007002009221338411')
                     .then(registration => {
                         console.log('SW registered: ', registration);
                     })

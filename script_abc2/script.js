@@ -1,6 +1,6 @@
 // Language translations
 const translations = {
-    zh: {
+    'zh-CN': {
         // Navigation
         'logo': '東森株式会社',
         'nav-home': '首页',
@@ -80,8 +80,8 @@ const translations = {
         'footer-rights': '保留所有权利',
 
         // Corporate Nav/Hero
-        'nav-corporate': '企業',
-        'corp-title': '東森株式会社 - 企業',
+        'nav-corporate': '企业',
+        'corp-title': '東森株式会社',
         'corp-catch': '此刻，与东森同行。',
         'corp-sub': '—— 在日本的每一刻，我们与你同行。',
 
@@ -127,6 +127,83 @@ const translations = {
         'corp-stories-title': '精彩瞬间与声音',
         'corp-stories-sub': '東森株式会社 的影像与照片及客户之声',
         'corp-stories-voices-title': '客户之声'
+    },
+    
+    'zh-TW': {
+        // Navigation
+        'logo': '東森株式會社',
+        'nav-home': '首頁',
+        'nav-services': '服務',
+        'nav-destinations': '目的地',
+        'nav-about': '關於我們',
+        'nav-contact': '聯繫我們',
+        'nav-corporate': '企業',
+        'nav-services-corp': '服務介紹',
+        'nav-strengths': '我們的優勢',
+        'nav-voices': '客戶之聲',
+        
+        // Hero Section
+        'hero-title': '探索日本，沉浸每一寸感動',
+        'hero-subtitle': '拒絕趕場式的奔波，您的專屬旅程，理應由心定義。我們提供專業的旅遊包車服務，以匠心精神為您定制獨一無二的旅行篇章。',
+        'hero-description': '無論是穿梭於東京的霓虹繁華，還是流連於京都的唐風古韻，您的專屬座駕與本地司導，不僅是安全的保障，更是您探索未知的貼心旅伴。讓我們聆聽您的想法，為您量身打造一段關於日本的、充滿溫情的記憶。',
+        'hero-btn-primary': '立即預訂',
+        'hero-btn-secondary': '了解更多',
+        
+        // Corporate sections
+        'corp-title': '東森株式會社',
+        'corp-catch': '此刻，與東森同行。',
+        'corp-sub': '—— 在日本的每一刻，我們與你同行。',
+        'corp-intro-title': '我們為您提供的特別「瞬間」 - Our Moments with You',
+        'corp-intro-p1': '2022年誕生的東森株式會社，懷著為每一位訪日客戶創造「特別瞬間」的願望，一直以來回應著各種需求。',
+        'corp-intro-p2': '觀光、商務、學習——。在參與眾多客戶「日本體驗」的過程中，我們最重視的不是單純的安排，而是協助客戶獲得內心深處的「感動」與「成功」。',
+        'corp-intro-p3': '「此刻，與東森同行」',
+        'corp-intro-p4': '這句話是我們的承諾。在機場迎接時的安心瞬間。商務合約達成時的喜悅瞬間。被日本美麗風景震撼的感動瞬間。獲得未來健康安心的瞬間——。',
+        'corp-intro-p5': '陪伴您旅程的每一個瞬間，默默支持，為您準備最佳的舞台。這就是東森株式會社的使命。',
+        
+        // Services
+        'corp-services-title': '服務介紹 - 為您的「瞬間」增添色彩，可靠的支援',
+        'corp-serv-1-title': '觀光・文化體驗 ─ 共同創造感動的瞬間',
+        'corp-serv-1-desc': '團體觀光接待、研修・修學旅行、私人包車、機場接送、傳統文化體驗安排',
+        'corp-serv-2-title': '商務・專業 ─ 共同創造成功的瞬間',
+        'corp-serv-2-desc': '商務接待・考察安排、商談會・會議支援、口譯・資料製作支援',
+        'corp-serv-3-title': '醫療・健康 ─ 共同創造安心的瞬間',
+        'corp-serv-3-desc': '健康檢查・先進醫療機構介紹、美容醫療接待・治療全程口譯支援',
+        'corp-serv-4-title': '學術・教育 ─ 共同創造發現的瞬間',
+        'corp-serv-4-desc': '學術交流團支援、教育機構考察安排、研究・商務考察',
+        
+        // Strengths
+        'corp-strengths-title': '東森的優勢 - 支撐您「瞬間」的可靠理由',
+        'corp-strength-1-title': '1. 豐富的實績與靈活的應對能力',
+        'corp-strength-1-desc': '我們擁有接待各種規模旅行團、商務考察團、學術交流團的豐富實績。能夠靈活應對多樣化需求，為您提供最適合的方案。',
+        'corp-strength-2-title': '2. 可靠的網絡與專屬負責制',
+        'corp-strength-2-desc': '我們在觀光、商務、醫療、教育等各領域擁有強大的合作夥伴網絡。具備相應專業知識的負責人將從頭到尾為您提供服務。',
+        'corp-strength-3-title': '3. 細緻的「款待」之心',
+        'corp-strength-3-desc': '以「此刻，與東森同行」的精神，提供超越語言障礙的心靈相通服務。我們站在客戶立場，注重細緻入微的關懷。',
+        
+        // Stories
+        'corp-stories-title': '精彩瞬間與聲音',
+        'corp-stories-sub': '東森株式會社的影像・照片與客戶之聲',
+        'corp-stories-voices-title': '客戶之聲',
+        'corp-voice-1': 'A公司 商務考察團負責人: 雖然是第一次在日本進行商談，但東森安排的口譯和行程管理非常出色，成功抓住了簽約這個『瞬間』。真正體驗到了『此刻，與東森同行』。',
+        'corp-voice-2': 'B大學 研修旅行參加學生: 不僅學習了日本的技術，還能體驗茶道等文化，這是一個難忘的『瞬間』。東森工作人員的溫暖支援，讓一切都變得更加特別。',
+        'corp-voice-3': 'C先生夫婦 醫療旅遊: 沒有語言上的不安，能夠很放鬆地接受高級健康檢查。聽到結果後感到『安心』的那個瞬間，能夠與東森分享，非常感謝。',
+        
+        // Contact
+        'corp-contact-title': '聯繫我們 - 您特別「瞬間」的開始',
+        'corp-contact-desc': '願您在日本的計劃成為無可替代的「瞬間」。歡迎隨時諮詢。',
+        'corp-contact-cta': '從這裡邁出通往「瞬間」的第一步',
+        
+        // Contact section
+        'contact-title': '聯繫我們',
+        'contact-subtitle': '準備開始您的日本之旅了嗎？立即聯繫我們獲取更多信息',
+        'contact-phone-title': '電話',
+        'contact-address-title': '地址',
+        'contact-address': '東京都墨田區立花四丁目23番7號椎葉302號室',
+        
+        // Footer
+        'footer-desc': '專業的日本包車服務，為您提供最優質的旅行體驗。',
+        'footer-contact-title': '聯繫方式',
+        'footer-rights': '保留所有權利'
     },
     
     ja: {
@@ -210,7 +287,7 @@ const translations = {
 
         // Corporate Nav/Hero
         'nav-corporate': '企業サイト',
-        'corp-title': '東森株式会社 - 企業サイト',
+        'corp-title': '東森株式会社',
         'corp-catch': 'この瞬間、東森とともに。',
         'corp-sub': '― あなたの日本での、大切なひとときを共に。',
 
@@ -391,14 +468,19 @@ const translations = {
 // Language switching functionality
 class LanguageSwitcher {
     constructor() {
-        this.currentLang = localStorage.getItem('selectedLanguage') || 'zh';
+        this.currentLang = document.body.getAttribute('data-lang') || localStorage.getItem('selectedLanguage') || 'ja';
         this.init();
     }
     
     init() {
-        this.setLanguage(this.currentLang);
+        // Only set language if it hasn't been set already
+        if (!document.body.getAttribute('data-lang')) {
+            this.setLanguage(this.currentLang);
+        } else {
+            // Language already set, just update the UI
+            this.updateLanguageButtons();
+        }
         this.bindEvents();
-        this.updateLanguageButtons();
     }
     
     bindEvents() {
@@ -509,14 +591,14 @@ class LanguageSwitcher {
         const originalText = submitBtn.textContent;
         
         // Show loading state
-        submitBtn.textContent = this.currentLang === 'zh' ? '发送中...' : 
+        submitBtn.textContent = (this.currentLang === 'zh-CN' || this.currentLang === 'zh-TW') ? '发送中...' : 
                                this.currentLang === 'ja' ? '送信中...' : 'Sending...';
         submitBtn.disabled = true;
         
         // Simulate form submission (replace with actual form handling)
         setTimeout(() => {
             // Show success message
-            const successMessage = this.currentLang === 'zh' ? '消息发送成功！' : 
+            const successMessage = (this.currentLang === 'zh-CN' || this.currentLang === 'zh-TW') ? '消息发送成功！' : 
                                   this.currentLang === 'ja' ? 'メッセージが正常に送信されました！' : 
                                   'Message sent successfully!';
             

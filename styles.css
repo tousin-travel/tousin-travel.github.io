@@ -56,7 +56,24 @@ body {
     overflow-x: hidden;
 }
 
+/* Hide content initially to prevent FOUC */
+body:not([data-lang]) {
+    visibility: hidden;
+}
+
+body[data-lang] {
+    visibility: visible;
+}
+
 /* Language-specific font families */
+body[data-lang="zh-CN"] {
+    font-family: var(--font-primary);
+}
+
+body[data-lang="zh-TW"] {
+    font-family: var(--font-primary);
+}
+
 body[data-lang="ja"] {
     font-family: var(--font-japanese);
 }
@@ -139,18 +156,18 @@ body[data-lang="en"] {
 
 .language-selector {
     display: flex;
-    gap: var(--spacing-xs);
+    gap: 0.25rem;
 }
 
 .lang-btn {
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 0.25rem 0.5rem;
     border: 1px solid var(--border-color);
     background: var(--bg-primary);
     color: var(--text-secondary);
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: var(--transition-fast);
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
 .lang-btn:hover {
@@ -1011,7 +1028,7 @@ section {
     }
     
     .hero {
-        padding: calc(var(--spacing-lg) + 140px) 0 var(--spacing-lg);
+        padding: calc(var(--spacing-lg) + 160px) 0 var(--spacing-lg);
     }
     
     .hero .container {
@@ -1033,12 +1050,12 @@ section {
     
     .language-selector {
         flex-direction: column;
-        gap: var(--spacing-xs);
+        gap: 0.25rem;
     }
     
     .lang-btn {
-        font-size: 0.75rem;
-        padding: var(--spacing-xs);
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
     }
 
     .corp-catch {
