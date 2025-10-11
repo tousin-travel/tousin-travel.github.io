@@ -56,15 +56,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Hide content initially to prevent FOUC */
-body:not([data-lang]) {
-    visibility: hidden;
-}
-
-body[data-lang] {
-    visibility: visible;
-}
-
 /* Language-specific font families */
 body[data-lang="zh-CN"] {
     font-family: var(--font-primary);
