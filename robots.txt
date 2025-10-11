@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tousin-travel.github.io/sitemap.xml
+
+# Disallow crawling of certain files
+Disallow: /script_abc3/
+Disallow: /sw.js
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /netlify.toml
+Disallow: /update-version.js
