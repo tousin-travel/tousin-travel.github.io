@@ -697,8 +697,52 @@ const utils = {
     }
 };
 
+// WeChat compatibility check
+function isWeChatBrowser() {
+    const ua = navigator.userAgent.toLowerCase();
+    return ua.indexOf('micromessenger') !== -1;
+}
+
+// WeChat compatibility fixes
+function applyWeChatFixes() {
+    if (isWeChatBrowser()) {
+        console.log('WeChat browser detected, applying compatibility fixes');
+        
+        // Disable Service Worker in WeChat (it can cause issues)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                for(let registration of registrations) {
+                    registration.unregister();
+                }
+            });
+        }
+        
+        // Add WeChat specific CSS fixes
+        const style = document.createElement('style');
+        style.textContent = `
+            /* WeChat specific fixes */
+            .contact-item.contact-phone,
+            .contact-item.contact-address {
+                -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            
+            /* Ensure proper touch handling in WeChat */
+            * {
+                -webkit-tap-highlight-color: transparent;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
+    // Apply WeChat compatibility fixes first
+    applyWeChatFixes();
+    
     // Initialize language switcher
     new LanguageSwitcher();
     
