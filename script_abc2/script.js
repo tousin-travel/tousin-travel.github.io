@@ -705,6 +705,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check Font Awesome loading
     checkFontAwesome();
     
+    // Initialize contact click functionality
+    initContactClick();
+    
     // Add loading animation
     document.body.classList.add('loaded');
     
@@ -950,7 +953,107 @@ function checkFontAwesome() {
     }
 }
 
+// Contact phone and address click functionality
+function initContactClick() {
+    // Create a toast notification function
+    function showToast(message, type = 'success') {
+        // Remove existing toast if any
+        const existingToast = document.querySelector('.copy-toast');
+        if (existingToast) {
+            existingToast.remove();
+        }
+        
+        // Create toast element
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.textContent = message;
+        toast.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${type === 'success' ? '#10b981' : '#ef4444'};
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 10000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        `;
+        
+        document.body.appendChild(toast);
+        
+        // Animate in
+        setTimeout(() => {
+            toast.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Remove after 3 seconds
+        setTimeout(() => {
+            toast.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (toast.parentNode) {
+                    toast.parentNode.removeChild(toast);
+                }
+            }, 300);
+        }, 3000);
+    }
+    
+    // Phone click functionality
+    const phoneElement = document.querySelector('.contact-item.contact-phone');
+    if (phoneElement) {
+        phoneElement.addEventListener('click', function() {
+            const phoneNumber = '03-5356-7810';
+            
+            // Create a temporary input element to copy phone number
+            const tempInput = document.createElement('input');
+            tempInput.value = phoneNumber;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            // Show toast notification
+            showToast('电话号码已复制到剪贴板！');
+            
+            // Try to initiate phone call on mobile devices
+            if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                window.location.href = `tel:${phoneNumber}`;
+            }
+        });
+        
+        // Add visual feedback for clickable element
+        phoneElement.style.cursor = 'pointer';
+        phoneElement.setAttribute('title', '点击复制电话号码或拨打电话');
+    }
+    
+    // Address click functionality
+    const addressElement = document.querySelector('.contact-item.contact-address');
+    if (addressElement) {
+        addressElement.addEventListener('click', function() {
+            const address = '東京都墨田区立花四丁目23番7号椎葉302号室';
+            
+            // Create a temporary input element to copy address
+            const tempInput = document.createElement('input');
+            tempInput.value = address;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            // Show toast notification
+            showToast('地址已复制到剪贴板！');
+        });
+        
+        // Add visual feedback for clickable element
+        addressElement.style.cursor = 'pointer';
+        addressElement.setAttribute('title', '点击复制地址');
+    }
+}
+
 // Export for potential module usage
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { LanguageSwitcher, utils, checkFontAwesome };
+    module.exports = { LanguageSwitcher, utils, checkFontAwesome, initContactClick };
 }

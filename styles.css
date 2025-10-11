@@ -729,8 +729,9 @@ section {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     gap: var(--spacing-2xl);
 }
 
@@ -738,28 +739,143 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
+    max-width: 600px;
+    width: 100%;
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-color);
 }
 
-.contact-item i {
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* 突出显示电话和地址 */
+.contact-item.contact-phone,
+.contact-item.contact-address {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--bg-primary);
+    border: 2px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-item.contact-phone::before,
+.contact-item.contact-address::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: var(--transition-slow);
+}
+
+.contact-item.contact-phone:hover::before,
+.contact-item.contact-address:hover::before {
+    left: 100%;
+}
+
+/* 点击反馈效果 */
+.contact-item.contact-phone:active,
+.contact-item.contact-address:active {
+    transform: translateY(-1px) scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+/* 添加脉冲动画来吸引注意力 */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(4, 56, 150, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(4, 56, 150, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(4, 56, 150, 0);
+    }
+}
+
+.contact-item.contact-phone,
+.contact-item.contact-address {
+    animation: pulse-glow 2s infinite;
+}
+
+/* 为电话和地址添加可点击的样式 */
+.contact-item.contact-phone,
+.contact-item.contact-address {
+    cursor: pointer;
+    user-select: none;
+}
+
+.contact-item.contact-phone:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.contact-item.contact-address:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.contact-item.contact-phone i,
+.contact-item.contact-address i {
+    color: var(--bg-primary);
+    font-size: 2rem;
+    margin-top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: var(--spacing-sm);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item.contact-phone h4,
+.contact-item.contact-address h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bg-primary);
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.contact-item.contact-phone p,
+.contact-item.contact-address p {
+    color: var(--bg-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.4;
+}
+
+/* 普通联系项目的样式 */
+.contact-item:not(.contact-phone):not(.contact-address) i {
     color: var(--primary-color);
     font-size: 1.5rem;
     margin-top: var(--spacing-xs);
 }
 
-.contact-item h4 {
+.contact-item:not(.contact-phone):not(.contact-address) h4 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
 }
 
-.contact-item p {
+.contact-item:not(.contact-phone):not(.contact-address) p {
     color: var(--text-secondary);
 }
 
@@ -883,7 +999,36 @@ section {
     }
     
     .contact-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info {
+        max-width: 100%;
+    }
+    
+    /* 移动端电话和地址的特殊样式 */
+    .contact-item.contact-phone,
+    .contact-item.contact-address {
+        padding: var(--spacing-xl);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .contact-item.contact-phone i,
+    .contact-item.contact-address i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .contact-item.contact-phone h4,
+    .contact-item.contact-address h4 {
+        font-size: 1.25rem;
+    }
+    
+    .contact-item.contact-phone p,
+    .contact-item.contact-address p {
+        font-size: 1.125rem;
     }
 
     .corp-contact-grid {

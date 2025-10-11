@@ -144,7 +144,15 @@
         // Set language immediately to prevent FOUC
         (function() {
             const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
-            document.body.setAttribute('data-lang', savedLang);
+            // Wait for DOM to be ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.setAttribute('data-lang', savedLang);
+                });
+            } else {
+                // DOM is already ready
+                document.body.setAttribute('data-lang', savedLang);
+            }
         })();
     </script>
 </head>
@@ -363,7 +371,7 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item contact-phone">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4 data-translate="contact-phone-title">电话</h4>
@@ -377,7 +385,7 @@
                             <p>info@japanchauffeur.com</p>
                         </div>
                     </div> -->
-                    <div class="contact-item">
+                    <div class="contact-item contact-address">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4 data-translate="contact-address-title">地址</h4>
