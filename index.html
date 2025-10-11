@@ -50,7 +50,7 @@
     <meta name="apple-mobile-web-app-title" content="東森株式会社">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="stylesheet" href="styles.css?v=202510112022102022102007002009221338411">
+    <link rel="stylesheet" href="styles.css?v=202510112029582029582022102007002009221338411">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome with preload -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,10 +62,10 @@
     <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous"></noscript>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=202510112022102022102007002009221338411">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=202510112022102022102007002009221338411">
-    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=202510112022102022102007002009221338411">
-    <link rel="shortcut icon" href="resources/logo.png?v=202510112022102022102007002009221338411">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=202510112029582029582022102007002009221338411">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=202510112029582029582022102007002009221338411">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=202510112029582029582022102007002009221338411">
+    <link rel="shortcut icon" href="resources/logo.png?v=202510112029582029582022102007002009221338411">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -140,7 +140,7 @@
     </script>
     
     <!-- Immediate language setting to prevent FOUC -->
-    <script>
+    <!-- <script>
         // Set language immediately to prevent FOUC
         (function() {
             const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
@@ -154,7 +154,7 @@
                 document.body.setAttribute('data-lang', savedLang);
             }
         })();
-    </script>
+    </script> -->
 </head>
 <body>
     <!-- Header -->
@@ -431,13 +431,14 @@
         </div>
     </footer>
 
-    <script src="script_abc2/script.js?v=202510112022102022102007002009221338411"></script>
+    <script src="script_abc3/script.js?v=202510112029582029582022102007002009221338411"></script>
     
     <!-- Service Worker Registration -->
     <script>
-        if ('serviceWorker' in navigator) {
+        // Only register service worker if running on HTTP/HTTPS protocol
+        if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.protocol === 'http:')) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js?v=202510112022102022102007002009221338411')
+                navigator.serviceWorker.register('./sw.js?v=202510112029582029582022102007002009221338411')
                     .then(registration => {
                         console.log('SW registered: ', registration);
                     })
@@ -445,6 +446,8 @@
                         console.log('SW registration failed: ', registrationError);
                     });
             });
+        } else if (location.protocol === 'file:') {
+            console.log('Service Worker not supported in file:// protocol. Please use a local server.');
         }
     </script>
 </body>
