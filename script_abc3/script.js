@@ -55,6 +55,10 @@ const translations = {
         'contact-email-title': '邮箱',
         'contact-address-title': '地址',
         'contact-address': '東京都墨田区立花四丁目23番7号椎葉302号室',
+        
+        // Toast Messages
+        'toast-phone-copied': '电话号码已复制到剪贴板！',
+        'toast-address-copied': '地址已复制到剪贴板！',
         'form-name': '姓名',
         'form-email': '邮箱',
         'form-phone': '电话',
@@ -200,6 +204,10 @@ const translations = {
         'contact-address-title': '地址',
         'contact-address': '東京都墨田區立花四丁目23番7號椎葉302號室',
         
+        // Toast Messages
+        'toast-phone-copied': '電話號碼已複製到剪貼板！',
+        'toast-address-copied': '地址已複製到剪貼板！',
+        
         // Footer
         'footer-desc': '專業的日本包車服務，為您提供最優質的旅行體驗。',
         'footer-contact-title': '聯繫方式',
@@ -261,6 +269,10 @@ const translations = {
         'contact-email-title': 'メール',
         'contact-address-title': '住所',
         'contact-address': '東京都墨田区立花四丁目23番7号椎葉302号室',
+        
+        // Toast Messages
+        'toast-phone-copied': '電話番号がクリップボードにコピーされました！',
+        'toast-address-copied': '住所がクリップボードにコピーされました！',
         'form-name': 'お名前',
         'form-email': 'メールアドレス',
         'form-phone': '電話番号',
@@ -390,6 +402,10 @@ const translations = {
         'contact-email-title': 'Email',
         'contact-address-title': 'Address',
         'contact-address': '東京都墨田区立花四丁目23番7号椎葉302号室',
+        
+        // Toast Messages
+        'toast-phone-copied': 'Phone number copied to clipboard!',
+        'toast-address-copied': 'Address copied to clipboard!',
         'form-name': 'Name',
         'form-email': 'Email',
         'form-phone': 'Phone',
@@ -468,7 +484,7 @@ const translations = {
 // Language switching functionality
 class LanguageSwitcher {
     constructor() {
-        this.currentLang = document.body.getAttribute('data-lang') || localStorage.getItem('selectedLanguage') || 'ja';
+        this.currentLang = /*document.body.getAttribute('data-lang') || */ localStorage.getItem('selectedLanguage') || 'ja';
         this.init();
     }
     
@@ -1000,7 +1016,15 @@ function checkFontAwesome() {
 // Contact phone and address click functionality
 function initContactClick() {
     // Create a toast notification function
-    function showToast(message, type = 'success') {
+    function showToast(messageKey, type = 'success') {
+        // Get current language
+        const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
+        
+        // Get translated message
+        const message = translations[currentLang] && translations[currentLang][messageKey] 
+            ? translations[currentLang][messageKey] 
+            : messageKey; // Fallback to key if translation not found
+        
         // Remove existing toast if any
         const existingToast = document.querySelector('.copy-toast');
         if (existingToast) {
@@ -1060,7 +1084,7 @@ function initContactClick() {
             document.body.removeChild(tempInput);
             
             // Show toast notification
-            showToast('电话号码已复制到剪贴板！');
+            showToast('toast-phone-copied');
             
             // Try to initiate phone call on mobile devices
             if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -1088,7 +1112,7 @@ function initContactClick() {
             document.body.removeChild(tempInput);
             
             // Show toast notification
-            showToast('地址已复制到剪贴板！');
+            showToast('toast-address-copied');
         });
         
         // Add visual feedback for clickable element
