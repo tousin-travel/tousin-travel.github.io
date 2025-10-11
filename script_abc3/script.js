@@ -489,14 +489,16 @@ class LanguageSwitcher {
     }
     
     init() {
-        // Only set language if it hasn't been set already
-        if (!document.body.getAttribute('data-lang')) {
-            this.setLanguage(this.currentLang);
-        } else {
-            // Language already set, just update the UI
-            this.updateLanguageButtons();
-        }
+        // // Only set language if it hasn't been set already
+        // if (!document.body.getAttribute('data-lang')) {
+        //     this.setLanguage(this.currentLang);
+        // } else {
+        //     // Language already set, just update the UI
+        //     this.updateLanguageButtons();
+        // }
+        this.setLanguage(this.currentLang);
         this.bindEvents();
+        this.updateLanguageButtons();
     }
     
     bindEvents() {
