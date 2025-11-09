@@ -3,7 +3,7 @@ const CACHE_NAME = 'tousin-v2025110917273217273221533221383221080720495720295820
 const urlsToCache = [
     '/',
     '/styles.css',
-    '/script_abc3/script.js',
+    '/script_abcdefg4/script_abcdefg4.js',
     '/resources/logo.png'
 ];
 
