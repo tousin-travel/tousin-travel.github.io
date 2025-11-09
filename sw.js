@@ -1,9 +1,9 @@
 // Service Worker for Cache Control
-const CACHE_NAME = 'tousin-v202511091727321727322153322138322108072049572029582022102007002009221338411';
+const CACHE_NAME = 'tousin-v202511091806321806321727322153322138322108072049572029582022102007002009221338411';
 const urlsToCache = [
     '/',
     '/styles.css',
-    '/script_abcdefg4/script_abcdefg4.js',
+    '/script_abcdefg5/script_abcdefg5.js',
     '/resources/logo.png'
 ];
 

@@ -50,7 +50,7 @@
     <meta name="apple-mobile-web-app-title" content="東森株式会社">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="stylesheet" href="styles.css?v=20251109172732172732215332213832">
+    <link rel="stylesheet" href="styles.css?v=20251109180632180632172732215332213832">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome with preload -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,10 +62,10 @@
     <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous"></noscript>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=20251109172732172732215332213832">
-    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=20251109172732172732215332213832">
-    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=20251109172732172732215332213832">
-    <link rel="shortcut icon" href="resources/logo.png?v=20251109172732172732215332213832">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/logo.png?v=20251109180632180632172732215332213832">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/logo.png?v=20251109180632180632172732215332213832">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/logo.png?v=20251109180632180632172732215332213832">
+    <link rel="shortcut icon" href="resources/logo.png?v=20251109180632180632172732215332213832">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -223,6 +223,30 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="corp-profile-title">会社概要</h2>
+                <div class="corporate-intro">
+                    <p data-translate="corp-intro-p1">「この瞬間、東森とともに」</p>
+                    <p data-translate="corp-intro-p2">株式会社東森は、令和4年に設立され、観光輸送事業および旅行業の登録を取得している信頼と実績の会社です。</p>
+                    <p data-translate="corp-intro-p3">私たちは、お客様のあらゆる「旅」と「移動」のニーズに応えるため、多彩なサービスを提供しております</p>
+                    <p data-translate="corp-intro-p4"><strong>主な事業内容</strong></p>
+                    <ul>
+                    <p data-translate="corp-intro-p5">· 観光事業</p>
+                    <p data-translate="corp-intro-p6">· 訪日外国人旅行者（インバウンド）向けの旅行企画・手配</p>
+                    <p data-translate="corp-intro-p7">· 日本語ガイドによる地上手配（地接）</p>
+                    <p data-translate="corp-intro-p8">· 教育旅行（修学旅行・研修旅行）</p>
+                    <p data-translate="corp-intro-p9">· ゴルフツアー</p>
+                    <p data-translate="corp-intro-p10">· 送迎サービス</p>
+                    <p data-translate="corp-intro-p11">· 空港・駅間の送迎</p>
+                    <p data-translate="corp-intro-p12">· 観光地への専用車チャーター</p>
+                    <p data-translate="corp-intro-p13">· ビジネス接待・送迎</p>
+                    <p data-translate="corp-intro-p14">· 会議・イベント送迎</p>
+                    <p data-translate="corp-intro-p15">· 特別分野におけるコーディネート</p>
+                    <p data-translate="corp-intro-p16">· 医療ツーリズム（健康診断・美容医療）</p>
+                    <p data-translate="corp-intro-p17">· 学術交流・視察ツアーの手配</p>
+                    </ul>
+                    <p data-translate="corp-intro-p18">私たち東森は、最新の設備を整えた清潔で快適な緑ナンバー車両と、経験豊富な専門ドライバー・スタッフが一丸となり、お客様の「安全」と「満足」を最優先に運営してまいります。</p>
+                    <p data-translate="corp-intro-p19">ビジネスからレジャー、特別なご用途まで、日本での素敵な時間を創造するお手伝いをさせていただきます。</p>
+                    <p data-translate="corp-intro-p20">どうぞ、この瞬間を、東森とともに。</p>
+                </div>
             </div>
             <div class="corp-profile-grid">
                 <div class="corp-profile-item">
@@ -482,7 +506,7 @@
         </div>
     </footer>
 
-    <script src="script_abcdefg4/script_abcdefg4.js?v=20251109172732172732215332213832"></script>
+    <script src="script_abcdefg5/script_abcdefg5.js?v=20251109180632180632172732215332213832"></script>
     
     <!-- Service Worker Registration -->
     <script>
@@ -495,7 +519,7 @@
         // Only register service worker if running on HTTP/HTTPS protocol and NOT in WeChat
         if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.protocol === 'http:') && !isWeChatBrowser()) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js?v=20251109172732172732215332213832')
+                navigator.serviceWorker.register('./sw.js?v=20251109180632180632172732215332213832')
                     .then(registration => {
                         console.log('SW registered: ', registration);
                     })

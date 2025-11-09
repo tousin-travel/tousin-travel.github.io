@@ -198,11 +198,11 @@ const translations = {
         'corp-catch': '此刻，與東森同行。',
         'corp-sub': '—— 在日本的每一刻，我們與你同行。',
         'corp-intro-title': '我們為您提供的特別「瞬間」 - Our Moments with You',
-        'corp-intro-p1': '2022年誕生的東森株式會社，懷著為每一位訪日客戶創造「特別瞬間」的願望，一直以來回應著各種需求。',
-        'corp-intro-p2': '觀光、商務、學習——。在參與眾多客戶「日本體驗」的過程中，我們最重視的不是單純的安排，而是協助客戶獲得內心深處的「感動」與「成功」。',
-        'corp-intro-p3': '「此刻，與東森同行」',
-        'corp-intro-p4': '這句話是我們的承諾。在機場迎接時的安心瞬間。商務合約達成時的喜悅瞬間。被日本美麗風景震撼的感動瞬間。獲得未來健康安心的瞬間——。',
-        'corp-intro-p5': '陪伴您旅程的每一個瞬間，默默支持，為您準備最佳的舞台。這就是東森株式會社的使命。',
+        // 'corp-intro-p1': '「この瞬間、東森とともに」',
+        // 'corp-intro-p2': '觀光、商務、學習——。在參與眾多客戶「日本體驗」的過程中，我們最重視的不是單純的安排，而是協助客戶獲得內心深處的「感動」與「成功」。',
+        // 'corp-intro-p3': '「此刻，與東森同行」',
+        // 'corp-intro-p4': '這句話是我們的承諾。在機場迎接時的安心瞬間。商務合約達成時的喜悅瞬間。被日本美麗風景震撼的感動瞬間。獲得未來健康安心的瞬間——。',
+        // 'corp-intro-p5': '陪伴您旅程的每一個瞬間，默默支持，為您準備最佳的舞台。這就是東森株式會社的使命。',
         
         // Services
         'corp-services-title': '服務介紹 - 為您的「瞬間」增添色彩，可靠的支援',
@@ -369,11 +369,11 @@ const translations = {
 
         // Corporate Intro
         'corp-intro-title': '私たちがお届けする、特別な「瞬間」 - Our Moments with You',
-        'corp-intro-p1': '2022年に誕生した東森株式会社は、日本を訪れるお客様一人ひとりの「特別な瞬間」を作りたいという想いで、さまざまなご要望にお応えしてまいりました。',
-        'corp-intro-p2': '観光に、ビジネスに、学びに――。多くのお客様の「日本での体験」に携わる中で、私たちが最も大切にしているのは、ただの手配ではなく、お客様の心に残る「感動」と「成功」をお手伝いすること。',
-        'corp-intro-p3': '「この瞬間、東森とともに」',
-        'corp-intro-p4': 'この言葉は、私たちの約束です。空港でお迎えした時の安堵の瞬間。ビジネス契約がまとまった時の喜びの瞬間。日本の美しい風景に息をのんだ感動の瞬間。未来の健康への安心を手に入れた瞬間――。',
-        'corp-intro-p5': 'あなたの旅のすべての瞬間に寄り添い、陰ながら支え、最高の舞台を整える。それが東森株式会社の役目です。',
+        // 'corp-intro-p1': '2022年に誕生した東森株式会社は、日本を訪れるお客様一人ひとりの「特別な瞬間」を作りたいという想いで、さまざまなご要望にお応えしてまいりました。',
+        // 'corp-intro-p2': '観光に、ビジネスに、学びに――。多くのお客様の「日本での体験」に携わる中で、私たちが最も大切にしているのは、ただの手配ではなく、お客様の心に残る「感動」と「成功」をお手伝いすること。',
+        // 'corp-intro-p3': '「この瞬間、東森とともに」',
+        // 'corp-intro-p4': 'この言葉は、私たちの約束です。空港でお迎えした時の安堵の瞬間。ビジネス契約がまとまった時の喜びの瞬間。日本の美しい風景に息をのんだ感動の瞬間。未来の健康への安心を手に入れた瞬間――。',
+        // 'corp-intro-p5': 'あなたの旅のすべての瞬間に寄り添い、陰ながら支え、最高の舞台を整える。それが東森株式会社の役目です。',
 
         // Corporate Services
         'corp-services-title': 'サービス紹介 - あなたの「瞬間」を彩る、確かなサポート',
@@ -526,11 +526,11 @@ const translations = {
 
         // Corporate Intro
         'corp-intro-title': 'The Special “Moments” We Create - Our Moments with You',
-        'corp-intro-p1': 'Founded in 2022, TOUSIN has been dedicated to creating special moments for every visitor to Japan, meeting a wide range of needs.',
-        'corp-intro-p2': 'For sightseeing, business, and learning — our priority is not mere arrangements, but helping you achieve “inspiration” and “success” that truly stay with you.',
-        'corp-intro-p3': '“In this moment, together with TOUSIN.”',
-        'corp-intro-p4': 'This is our promise: the relief the moment you are greeted at the airport; the joy when a business contract is concluded; the awe when you witness Japan’s beauty; the peace of mind as you secure your future health.',
-        'corp-intro-p5': 'We stand by every moment of your journey, supporting you behind the scenes and preparing the best stage — that is our role.',
+        // 'corp-intro-p1': 'Founded in 2022, TOUSIN has been dedicated to creating special moments for every visitor to Japan, meeting a wide range of needs.',
+        // 'corp-intro-p2': 'For sightseeing, business, and learning — our priority is not mere arrangements, but helping you achieve “inspiration” and “success” that truly stay with you.',
+        // 'corp-intro-p3': '“In this moment, together with TOUSIN.”',
+        // 'corp-intro-p4': 'This is our promise: the relief the moment you are greeted at the airport; the joy when a business contract is concluded; the awe when you witness Japan’s beauty; the peace of mind as you secure your future health.',
+        // 'corp-intro-p5': 'We stand by every moment of your journey, supporting you behind the scenes and preparing the best stage — that is our role.',
 
         // Corporate Services
         'corp-services-title': 'Services — Reliable Support for Your Moments',

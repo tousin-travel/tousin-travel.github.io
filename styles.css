@@ -321,6 +321,13 @@ body[data-lang="en"] {
     opacity: 0.85;
 }
 
+.corporate-intro p {
+    text-align: left;
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+}
+
 .corp-catch {
     font-size: 1.75rem;
     font-weight: 700;
