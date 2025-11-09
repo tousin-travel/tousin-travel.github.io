@@ -408,6 +408,61 @@ section {
     gap: var(--spacing-md);
 }
 
+/* Corporate Profile Grid */
+.corp-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.corp-profile-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-normal);
+}
+
+.corp-profile-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.corp-profile-item-full {
+    grid-column: 1 / -1;
+}
+
+.corp-profile-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.corp-profile-value {
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.corp-profile-value a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.corp-profile-value a:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
+}
+
 .services-extended .service-card p {
     text-align: left;
 }
@@ -1116,6 +1171,11 @@ section {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    /* Corporate Profile Grid - Mobile */
+    .corp-profile-grid {
+        grid-template-columns: 1fr;
     }
     
     .btn {
