@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://tousin-travel.github.io/sitemap.xml
+Sitemap: https://tousintrip.com/sitemap.xml
 
 # Disallow crawling of certain files
 Disallow: /script_abc3/
