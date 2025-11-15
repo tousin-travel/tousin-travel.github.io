@@ -113,6 +113,29 @@ const translations = {
         'corp-profile-fax-value': '03-5356-7810',
         'corp-profile-url-label': 'URL',
 
+        // Corporate Intro
+        'corp-intro-title': '我们为您提供的特别"瞬间" - Our Moments with You',
+        'corp-intro-p1': '「此刻，与东森同行」',
+        'corp-intro-p2': '株式会社东森成立于令和4年，是一家拥有观光运输事业以及旅游业注册资格，值得信赖且具有丰富实绩的公司。',
+        'corp-intro-p3': '我们为了满足客户的各种"旅行"和"移动"需求，提供多样化的服务。',
+        'corp-intro-p4': '<strong>主要事业内容</strong>',
+        'corp-intro-p5': '· 观光事业',
+        'corp-intro-p6': '· 面向访日外国旅行者（入境游）的旅行策划·安排',
+        'corp-intro-p7': '· 日语导游的地面安排（地接）',
+        'corp-intro-p8': '· 教育旅行（修学旅行·研修旅行）',
+        'corp-intro-p9': '· 高尔夫旅游',
+        'corp-intro-p10': '· 接送服务',
+        'corp-intro-p11': '· 机场·车站间的接送',
+        'corp-intro-p12': '· 前往观光地的专车包车',
+        'corp-intro-p13': '· 商务接待·接送',
+        'corp-intro-p14': '· 会议·活动接送',
+        'corp-intro-p15': '· 特殊领域的协调',
+        'corp-intro-p16': '· 医疗旅游（健康体检·美容医疗）',
+        'corp-intro-p17': '· 学术交流·考察旅游的安排',
+        'corp-intro-p18': '我们东森拥有配备最新设备的清洁舒适的绿牌车辆，以及经验丰富的专业司机·员工，团结一致，以客户的"安全"和"满意"为最优先进行运营。',
+        'corp-intro-p19': '从商务到休闲，以及特殊用途，我们致力于为您创造在日本的精彩时光。',
+        'corp-intro-p20': '请与东森一起，共享这一瞬间。',
+
         // Corporate Services
         'corp-services-title': '服务介绍 - 为您的“瞬间”提供可靠支持',
         'corp-serv-1-title': '观光·文化体验 —— 共同见证感动瞬间',
@@ -198,11 +221,26 @@ const translations = {
         'corp-catch': '此刻，與東森同行。',
         'corp-sub': '—— 在日本的每一刻，我們與你同行。',
         'corp-intro-title': '我們為您提供的特別「瞬間」 - Our Moments with You',
-        // 'corp-intro-p1': '「この瞬間、東森とともに」',
-        // 'corp-intro-p2': '觀光、商務、學習——。在參與眾多客戶「日本體驗」的過程中，我們最重視的不是單純的安排，而是協助客戶獲得內心深處的「感動」與「成功」。',
-        // 'corp-intro-p3': '「此刻，與東森同行」',
-        // 'corp-intro-p4': '這句話是我們的承諾。在機場迎接時的安心瞬間。商務合約達成時的喜悅瞬間。被日本美麗風景震撼的感動瞬間。獲得未來健康安心的瞬間——。',
-        // 'corp-intro-p5': '陪伴您旅程的每一個瞬間，默默支持，為您準備最佳的舞台。這就是東森株式會社的使命。',
+        'corp-intro-p1': '「此刻，與東森同行」',
+        'corp-intro-p2': '株式會社東森成立於令和4年，是一家擁有觀光運輸事業以及旅遊業註冊資格，值得信賴且具有豐富實績的公司。',
+        'corp-intro-p3': '我們為了滿足客戶的各種「旅行」和「移動」需求，提供多樣化的服務。',
+        'corp-intro-p4': '<strong>主要事業內容</strong>',
+        'corp-intro-p5': '· 觀光事業',
+        'corp-intro-p6': '· 面向訪日外國旅行者（入境遊）的旅行策劃·安排',
+        'corp-intro-p7': '· 日語導遊的地面安排（地接）',
+        'corp-intro-p8': '· 教育旅行（修學旅行·研修旅行）',
+        'corp-intro-p9': '· 高爾夫旅遊',
+        'corp-intro-p10': '· 接送服務',
+        'corp-intro-p11': '· 機場·車站間的接送',
+        'corp-intro-p12': '· 前往觀光地的專車包車',
+        'corp-intro-p13': '· 商務接待·接送',
+        'corp-intro-p14': '· 會議·活動接送',
+        'corp-intro-p15': '· 特殊領域的協調',
+        'corp-intro-p16': '· 醫療旅遊（健康體檢·美容醫療）',
+        'corp-intro-p17': '· 學術交流·考察旅遊的安排',
+        'corp-intro-p18': '我們東森擁有配備最新設備的清潔舒適的綠牌車輛，以及經驗豐富的專業司機·員工，團結一致，以客戶的「安全」和「滿意」為最優先進行運營。',
+        'corp-intro-p19': '從商務到休閒，以及特殊用途，我們致力於為您創造在日本的精彩時光。',
+        'corp-intro-p20': '請與東森一起，共享這一瞬間。',
         
         // Services
         'corp-services-title': '服務介紹 - 為您的「瞬間」增添色彩，可靠的支援',
@@ -369,11 +407,26 @@ const translations = {
 
         // Corporate Intro
         'corp-intro-title': '私たちがお届けする、特別な「瞬間」 - Our Moments with You',
-        // 'corp-intro-p1': '2022年に誕生した東森株式会社は、日本を訪れるお客様一人ひとりの「特別な瞬間」を作りたいという想いで、さまざまなご要望にお応えしてまいりました。',
-        // 'corp-intro-p2': '観光に、ビジネスに、学びに――。多くのお客様の「日本での体験」に携わる中で、私たちが最も大切にしているのは、ただの手配ではなく、お客様の心に残る「感動」と「成功」をお手伝いすること。',
-        // 'corp-intro-p3': '「この瞬間、東森とともに」',
-        // 'corp-intro-p4': 'この言葉は、私たちの約束です。空港でお迎えした時の安堵の瞬間。ビジネス契約がまとまった時の喜びの瞬間。日本の美しい風景に息をのんだ感動の瞬間。未来の健康への安心を手に入れた瞬間――。',
-        // 'corp-intro-p5': 'あなたの旅のすべての瞬間に寄り添い、陰ながら支え、最高の舞台を整える。それが東森株式会社の役目です。',
+        'corp-intro-p1': '「この瞬間、東森とともに」',
+        'corp-intro-p2': '株式会社東森は、令和4年に設立され、観光輸送事業および旅行業の登録を取得している信頼と実績の会社です。',
+        'corp-intro-p3': '私たちは、お客様のあらゆる「旅」と「移動」のニーズに応えるため、多彩なサービスを提供しております',
+        'corp-intro-p4': '<strong>主な事業内容</strong>',
+        'corp-intro-p5': '· 観光事業',
+        'corp-intro-p6': '· 訪日外国人旅行者（インバウンド）向けの旅行企画·手配',
+        'corp-intro-p7': '· 日本語ガイドによる地上手配（地接）',
+        'corp-intro-p8': '· 教育旅行（修学旅行·研修旅行）',
+        'corp-intro-p9': '· ゴルフツアー',
+        'corp-intro-p10': '· 送迎サービス',
+        'corp-intro-p11': '· 空港·駅間の送迎',
+        'corp-intro-p12': '· 観光地への専用車チャーター',
+        'corp-intro-p13': '· ビジネス接待·送迎',
+        'corp-intro-p14': '· 会議·イベント送迎',
+        'corp-intro-p15': '· 特別分野におけるコーディネート',
+        'corp-intro-p16': '· 医療ツーリズム（健康診断·美容医療）',
+        'corp-intro-p17': '· 学術交流·視察ツアーの手配',
+        'corp-intro-p18': '私たち東森は、最新の設備を整えた清潔で快適な緑ナンバー車両と、経験豊富な専門ドライバー·スタッフが一丸となり、お客様の「安全」と「満足」を最優先に運営してまいります。',
+        'corp-intro-p19': 'ビジネスからレジャー、特別なご用途まで、日本での素敵な時間を創造するお手伝いをさせていただきます。',
+        'corp-intro-p20': 'どうぞ、この瞬間を、東森とともに。',
 
         // Corporate Services
         'corp-services-title': 'サービス紹介 - あなたの「瞬間」を彩る、確かなサポート',
@@ -525,12 +578,27 @@ const translations = {
         'corp-profile-url-label': 'URL',
 
         // Corporate Intro
-        'corp-intro-title': 'The Special “Moments” We Create - Our Moments with You',
-        // 'corp-intro-p1': 'Founded in 2022, TOUSIN has been dedicated to creating special moments for every visitor to Japan, meeting a wide range of needs.',
-        // 'corp-intro-p2': 'For sightseeing, business, and learning — our priority is not mere arrangements, but helping you achieve “inspiration” and “success” that truly stay with you.',
-        // 'corp-intro-p3': '“In this moment, together with TOUSIN.”',
-        // 'corp-intro-p4': 'This is our promise: the relief the moment you are greeted at the airport; the joy when a business contract is concluded; the awe when you witness Japan’s beauty; the peace of mind as you secure your future health.',
-        // 'corp-intro-p5': 'We stand by every moment of your journey, supporting you behind the scenes and preparing the best stage — that is our role.',
+        'corp-intro-title': 'The Special "Moments" We Create - Our Moments with You',
+        'corp-intro-p1': '"In this moment, together with TOUSIN."',
+        'corp-intro-p2': 'TOUSIN Co., Ltd. was established in Reiwa 4 (2022) and is a trusted company with a proven track record, registered for tourism transportation business and travel business.',
+        'corp-intro-p3': 'We provide diverse services to meet all of our customers\' "travel" and "transportation" needs.',
+        'corp-intro-p4': '<strong>Main Business Activities</strong>',
+        'corp-intro-p5': '· Tourism business',
+        'corp-intro-p6': '· Travel planning and arrangements for inbound foreign travelers',
+        'corp-intro-p7': '· Ground arrangements (ground handling) with Japanese guides',
+        'corp-intro-p8': '· Educational travel (school trips and training trips)',
+        'corp-intro-p9': '· Golf tours',
+        'corp-intro-p10': '· Transfer services',
+        'corp-intro-p11': '· Transfers between airports and stations',
+        'corp-intro-p12': '· Private car charters to tourist destinations',
+        'corp-intro-p13': '· Business reception and transfers',
+        'corp-intro-p14': '· Conference and event transfers',
+        'corp-intro-p15': '· Coordination in special fields',
+        'corp-intro-p16': '· Medical tourism (health checkups and aesthetic medicine)',
+        'corp-intro-p17': '· Arrangements for academic exchange and inspection tours',
+        'corp-intro-p18': 'At TOUSIN, we operate with our clean and comfortable green-plate vehicles equipped with the latest facilities, along with our experienced professional drivers and staff, all working together to prioritize our customers\' "safety" and "satisfaction."',
+        'corp-intro-p19': 'From business to leisure and special purposes, we help create wonderful times in Japan.',
+        'corp-intro-p20': 'Please share this moment with TOUSIN.',
 
         // Corporate Services
         'corp-services-title': 'Services — Reliable Support for Your Moments',
@@ -667,7 +735,13 @@ class LanguageSwitcher {
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
             if (translations[lang][key]) {
-                element.textContent = translations[lang][key];
+                // Use innerHTML for elements that may contain HTML tags (like <strong>)
+                const translation = translations[lang][key];
+                if (translation.includes('<') && translation.includes('>')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
             }
         });
         
