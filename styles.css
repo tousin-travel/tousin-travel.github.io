@@ -470,6 +470,23 @@ section {
     color: var(--primary-dark);
 }
 
+/* Business list styling - when corp-profile-value is an ol element */
+ol.corp-profile-value {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+}
+
+ol.corp-profile-value li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+ol.corp-profile-value li:last-child {
+    margin-bottom: 0;
+}
+
 .services-extended .service-card p {
     text-align: left;
 }

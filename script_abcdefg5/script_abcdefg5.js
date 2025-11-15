@@ -104,7 +104,7 @@ const translations = {
         'corp-profile-employees-label': '従業員',
         'corp-profile-employees-value': '***',
         'corp-profile-business-label': '事業内容',
-        // 'corp-profile-business-value': '1. 旅行業<br>2. 一般乘用旅客自動車運送事業<br>3. 各種商品・製品・半製品・原材料の販売及び輸出入並びに卸・小売業<br>4. インターネットを利用した各種商品販売・情報提供サービス・広告・宣伝及び市場調査に関する業務並びに代理業務<br>5. インターネット及びコンピュータシステムを利用した情報ネットワークのソフトウェア、ハードウェア及び各種アプリケーションソフトの企画、設計、開発、制作、配信、運営、リース、販売及び利用技術の指導並びにこれらに関するコンサルティング業務<br>6. 各種メディアを利用した映像・音声・データ等のコンテンツ配信サービスのマーケティング業務及び販売業務<br>7. 国内外における投資、金融、貿易、生活、留学、旅行に関するコンサルティング業務<br>8. 新エネルギー(太陽光、太陽熱、風力、地熱、波力、バイオ及び廃棄物等)を利用した発電装置の企画、設計、研究、開発、施工及び販売並びにそれらのコンサルティング業務<br>9. 国内外における不動産の売買・仲介・賃貸借・管理・運営及び国外への不動産投資並びにこれらに関するコンサルティング業務<br>10. 古物営業法による古物営業<br>11. 前各号に附帯又は関連する一切の業務',
+        'corp-profile-business-value': '1. 旅游业<br>2. 一般乘用旅客汽车运输事业<br>3. 各种商品、制品、半制品、原材料的销售及进出口，以及批发、零售业<br>4. 利用互联网进行的各种商品销售、信息服务、广告、宣传及市场调查相关业务，及其代理业务<br>5. 利用互联网及计算机系统的信息网络软件、硬件及各种应用软件的策划、设计、开发、制作、分发、运营、租赁、销售及使用技术指导，以及与此相关的咨询业务<br>6. 利用各种媒体进行的影像、声音、数据等内容的流媒体服务的市场营销业务及销售业务<br>7. 在国内外有关投资、金融、贸易、生活、留学、旅行的咨询业务<br>8. 利用新能源（太阳能、太阳热、风力、地热、波浪能、生物能及废弃物等）的发电装置的策划、设计、研究、开发、施工及销售，以及其相关的咨询业务<br>9. 在国内外不动产的买卖、中介、租赁、管理、运营及向国外的不动产投资，以及与此相关的咨询业务<br>10. 依据旧物经营法的旧物经营<br>11. 前述各项附带或相关的一切业务',
         'corp-profile-travel-license-label': '旅行業番号',
         'corp-profile-travel-license-value': '第3-8679号',
         'corp-profile-tel-label': 'TEL',
@@ -177,7 +177,7 @@ const translations = {
         'corp-profile-employees-label': '従業員',
         'corp-profile-employees-value': '***',
         'corp-profile-business-label': '事業內容',
-        // 'corp-profile-business-value': '1. 旅行業<br>2. 一般乘用旅客自動車運送事業<br>3. 各種商品・製品・半製品・原材料の販売及び輸出入並びに卸・小売業<br>4. インターネットを利用した各種商品販売・情報提供サービス・広告・宣伝及び市場調査に関する業務並びに代理業務<br>5. インターネット及びコンピュータシステムを利用した情報ネットワークのソフトウェア、ハードウェア及び各種アプリケーションソフトの企画、設計、開発、制作、配信、運営、リース、販売及び利用技術の指導並びにこれらに関するコンサルティング業務<br>6. 各種メディアを利用した映像・音声・データ等のコンテンツ配信サービスのマーケティング業務及び販売業務<br>7. 國內外における投資、金融、貿易、生活、留學、旅行に関するコンサルティング業務<br>8. 新エネルギー(太陽光、太陽熱、風力、地熱、波力、バイオ及び廃棄物等)を利用した発電装置の企画、設計、研究、開発、施工及び販売並びにそれらのコンサルティング業務<br>9. 國內外における不動産の売買・仲介・賃貸借・管理・運営及び國外への不動産投資並びにこれらに関するコンサルティング業務<br>10. 古物営業法による古物営業<br>11. 前各號に附帯又は関連する一切の業務',
+        'corp-profile-business-value': '1. 旅遊業<br>2. 一般乘用旅客汽車運輸事業<br>3. 各種商品、製品、半製品、原材料的銷售及進出口，以及批發、零售業<br>4. 利用互聯網進行的各種商品銷售、信息服務、廣告、宣傳及市場調查相關業務，及其代理業務<br>5. 利用互聯網及計算機系統的信息網絡軟件、硬件及各種應用軟件的策劃、設計、開發、製作、分發、運營、租賃、銷售及使用技術指導，以及與此相關的諮詢業務<br>6. 利用各種媒體進行的影像、聲音、數據等內容的流媒體服務的市場營銷業務及銷售業務<br>7. 在國內外有關投資、金融、貿易、生活、留學、旅行的諮詢業務<br>8. 利用新能源（太陽能、太陽熱、風力、地熱、波浪能、生物能及廢棄物等）的發電裝置的策劃、設計、研究、開發、施工及銷售，以及其相關的諮詢業務<br>9. 在國內外不動產的買賣、中介、租賃、管理、運營及向國外的不動產投資，以及與此相關的諮詢業務<br>10. 依據舊物經營法的舊物經營<br>11. 前述各項附帶或相關的一切業務',
         'corp-profile-travel-license-label': '旅行業番號',
         'corp-profile-travel-license-value': '第3-8679號',
         'corp-profile-tel-label': 'TEL',
@@ -358,7 +358,7 @@ const translations = {
         'corp-profile-employees-label': '従業員',
         'corp-profile-employees-value': '***',
         'corp-profile-business-label': '事業内容',
-        // 'corp-profile-business-value': '1. 旅行業<br>2. 一般乘用旅客自動車運送事業<br>3. 各種商品・製品・半製品・原材料の販売及び輸出入並びに卸・小売業<br>4. インターネットを利用した各種商品販売・情報提供サービス・広告・宣伝及び市場調査に関する業務並びに代理業務<br>5. インターネット及びコンピュータシステムを利用した情報ネットワークのソフトウェア、ハードウェア及び各種アプリケーションソフトの企画、設計、開発、制作、配信、運営、リース、販売及び利用技術の指導並びにこれらに関するコンサルティング業務<br>6. 各種メディアを利用した映像・音声・データ等のコンテンツ配信サービスのマーケティング業務及び販売業務<br>7. 国内外における投資、金融、貿易、生活、留学、旅行に関するコンサルティング業務<br>8. 新エネルギー(太陽光、太陽熱、風力、地熱、波力、バイオ及び廃棄物等)を利用した発電装置の企画、設計、研究、開発、施工及び販売並びにそれらのコンサルティング業務<br>9. 国内外における不動産の売買・仲介・賃貸借・管理・運営及び国外への不動産投資並びにこれらに関するコンサルティング業務<br>10. 古物営業法による古物営業<br>11. 前各号に附帯又は関連する一切の業務',
+        'corp-profile-business-value': '1. 旅行業<br>2. 一般乘用旅客自動車運送事業<br>3. 各種商品・製品・半製品・原材料の販売及び輸出入並びに卸・小売業<br>4. インターネットを利用した各種商品販売・情報提供サービス・広告・宣伝及び市場調査に関する業務並びに代理業務<br>5. インターネット及びコンピュータシステムを利用した情報ネットワークのソフトウェア、ハードウェア及び各種アプリケーションソフトの企画、設計、開発、制作、配信、運営、リース、販売及び利用技術の指導並びにこれらに関するコンサルティング業務<br>6. 各種メディアを利用した映像・音声・データ等のコンテンツ配信サービスのマーケティング業務及び販売業務<br>7. 国内外における投資、金融、貿易、生活、留学、旅行に関するコンサルティング業務<br>8. 新エネルギー(太陽光、太陽熱、風力、地熱、波力、バイオ及び廃棄物等)を利用した発電装置の企画、設計、研究、開発、施工及び販売並びにそれらのコンサルティング業務<br>9. 国内外における不動産の売買・仲介・賃貸借・管理・運営及び国外への不動産投資並びにこれらに関するコンサルティング業務<br>10. 古物営業法による古物営業<br>11. 前各号に附帯又は関連する一切の業務',
         'corp-profile-travel-license-label': '旅行業番号',
         'corp-profile-travel-license-value': '第3-8679号',
         'corp-profile-tel-label': 'TEL',
@@ -515,7 +515,7 @@ const translations = {
         'corp-profile-employees-label': 'Employees',
         'corp-profile-employees-value': '***',
         'corp-profile-business-label': 'Business Activities',
-        // 'corp-profile-business-value': '1. Travel business<br>2. General passenger vehicle transportation business<br>3. Sales and import/export of various goods, products, semi-finished products, raw materials, and wholesale/retail business<br>4. Internet-based sales of various goods, information services, advertising, promotion, market research, and agency services<br>5. Planning, design, development, production, distribution, operation, leasing, sales, and technical guidance for software, hardware, and various applications using internet and computer systems, as well as consulting services related to these<br>6. Marketing and sales of content distribution services using various media such as video, audio, and data<br>7. Consulting services related to investment, finance, trade, living, study abroad, and travel both domestically and internationally<br>8. Planning, design, research, development, construction, and sales of power generation equipment using new energy (solar, solar thermal, wind, geothermal, wave, bio, and waste), as well as consulting services related to these<br>9. Real estate sales, brokerage, leasing, management, operation, and overseas real estate investment both domestically and internationally, as well as consulting services related to these<br>10. Antique business under the Antique Business Act<br>11. All business incidental or related to the preceding items',
+        'corp-profile-business-value': '1. Travel business<br>2. General passenger vehicle transportation business<br>3. Sales and import/export of various goods, products, semi-finished products, raw materials, and wholesale/retail business<br>4. Internet-based sales of various goods, information services, advertising, promotion, market research, and agency services<br>5. Planning, design, development, production, distribution, operation, leasing, sales, and technical guidance for software, hardware, and various applications using internet and computer systems, as well as consulting services related to these<br>6. Marketing and sales of content distribution services using various media such as video, audio, and data<br>7. Consulting services related to investment, finance, trade, living, study abroad, and travel both domestically and internationally<br>8. Planning, design, research, development, construction, and sales of power generation equipment using new energy (solar, solar thermal, wind, geothermal, wave, bio, and waste), as well as consulting services related to these<br>9. Real estate sales, brokerage, leasing, management, operation, and overseas real estate investment both domestically and internationally, as well as consulting services related to these<br>10. Antique business under the Antique Business Act<br>11. All business incidental or related to the preceding items',
         'corp-profile-travel-license-label': 'Travel License Number',
         'corp-profile-travel-license-value': 'No. 3-8679',
         'corp-profile-tel-label': 'TEL',
@@ -671,6 +671,11 @@ class LanguageSwitcher {
             }
         });
         
+        // Update business list separately
+        if (translations[lang]['corp-profile-business-value']) {
+            this.updateBusinessList(translations[lang]['corp-profile-business-value']);
+        }
+        
         // Update placeholder texts
         document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
             const key = element.getAttribute('data-translate-placeholder');
@@ -687,6 +692,28 @@ class LanguageSwitcher {
             btn.classList.remove('active');
             if (btn.getAttribute('data-lang') === this.currentLang) {
                 btn.classList.add('active');
+            }
+        });
+    }
+    
+    updateBusinessList(businessText) {
+        const listElement = document.getElementById('corp-profile-business-list');
+        if (!listElement) return;
+        
+        // Clear existing list items
+        listElement.innerHTML = '';
+        
+        // Split by <br> and process each item
+        const items = businessText.split('<br>');
+        
+        items.forEach(item => {
+            // Remove leading number and period (e.g., "1. " or "10. ")
+            const cleanedItem = item.trim().replace(/^\d+\.\s*/, '');
+            
+            if (cleanedItem) {
+                const li = document.createElement('li');
+                li.textContent = cleanedItem;
+                listElement.appendChild(li);
             }
         });
     }
