@@ -8,6 +8,8 @@ const translations = {
         'nav-destinations': '目的地',
         'nav-about': '关于我们',
         'nav-contact': '联系我们',
+
+        'title-description': '东森旅遊 东京包车 租车 绿牌车 日本包车 Tokyo Charter Car Green License Plate Vehicle',
         
         // Hero Section
         'hero-title': '探索日本，沉浸每一寸感动',
@@ -184,6 +186,8 @@ const translations = {
         'nav-services-corp': '服務介紹',
         'nav-strengths': '我們的優勢',
         'nav-voices': '客戶之聲',
+
+        'title-description': '東森旅遊 東京包車 租車 綠牌車 日本包車 Tokyo Charter Car Green License Plate Vehicle',
         
         // Corporate Profile
         'corp-profile-title': '會社概要',
@@ -300,6 +304,8 @@ const translations = {
         'nav-destinations': '目的地',
         'nav-about': '私たちについて',
         'nav-contact': 'お問い合わせ',
+
+        'title-description': '東森旅遊 包车 绿牌车 東京 チャーター車 レンタカー 日本 送迎サービス Tokyo Charter Car Green License Plate Vehicle',
         
         // Hero Section
         'hero-title': '日本を探索し、ひとときの感動に浸る',
@@ -472,6 +478,8 @@ const translations = {
         'nav-destinations': 'Destinations',
         'nav-about': 'About Us',
         'nav-contact': 'Contact',
+
+        'title-description': 'TOUSIN Tokyo car charter, Tokyo rental car, licensed commercial vehicle チャーター車 レンタカー 送迎サービス Tokyo Charter Car Green License Plate Vehicle',
         
         // Hero Section
         'hero-title': 'Explore Japan, Immerse Yourself in Every Moment.',
@@ -729,7 +737,7 @@ class LanguageSwitcher {
         document.body.setAttribute('data-lang', lang);
         
         // Update document title
-        document.title = translations[lang]['logo'] + ' - ' + translations[lang]['hero-subtitle'];
+        document.title = translations[lang]['logo'] + ' - ' + translations[lang]['title-description'];
         
         // Update all translatable elements
         document.querySelectorAll('[data-translate]').forEach(element => {
